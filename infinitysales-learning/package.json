@@ -1,0 +1,28 @@
+{
+  "name": "infinity-sales-learning",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node --max-old-space-size=16384 --expose-gc node_modules/nuxt/bin/nuxt.js",
+    "build": "node --max-old-space-size=16384 node_modules/nuxt/bin/nuxt.js build",
+    "start": "node --max-old-space-size=16384 node_modules/nuxt/bin/nuxt.js start"
+  },
+  "dependencies": {
+    "nuxt": "^2.4.5",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/auth-next": "5.0.0-1818c9d7.c7d1e35",
+    "nuxt-i18n": "^6.15.4",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "element-ui": "^2.15.3",
+    "bootstrap-vue": "^2.17.3",
+    "sass": "^1.99.0",
+    "sass-loader": "^10.4.1",
+    "vue-toastification": "^1.7.11",
+    "moment": "^2.29.1",
+    "vuelidate": "^0.7.6",
+    "vue-the-mask": "^0.11.1",
+    "vue-awesome-countdown": "^1.1.4",
+    "lodash": "^4.17.21",
+    "pm2": "^5.3.0"
+  }
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "name": "blog___ru___default",
+    "path": "/blog",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_6d4f4677"
+  },
+  {
+    "name": "courses___ru___default",
+    "path": "/courses",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\courses\\\\index.vue",
+    "chunkName": "pages/courses/index",
+    "_name": "_f27da53a"
+  },
+  {
+    "name": "notifications___ru___default",
+    "path": "/notifications",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\notifications\\\\index.vue",
+    "chunkName": "pages/notifications/index",
+    "_name": "_8d54951a"
+  },
+  {
+    "name": "profile___ru___default",
+    "path": "/profile",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\profile\\\\index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_3ba756d2"
+  },
+  {
+    "name": "index___ru",
+    "path": "/ru",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0eefebce"
+  },
+  {
+    "name": "index___uz",
+    "path": "/uz",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0eefebce"
+  },
+  {
+    "name": "blog-create___ru___default",
+    "path": "/blog/create",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\create.vue",
+    "chunkName": "pages/blog/create",
+    "_name": "_644dd327"
+  },
+  {
+    "name": "blog___ru",
+    "path": "/ru/blog",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_6d4f4677"
+  },
+  {
+    "name": "courses___ru",
+    "path": "/ru/courses",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\courses\\\\index.vue",
+    "chunkName": "pages/courses/index",
+    "_name": "_f27da53a"
+  },
+  {
+    "name": "notifications___ru",
+    "path": "/ru/notifications",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\notifications\\\\index.vue",
+    "chunkName": "pages/notifications/index",
+    "_name": "_8d54951a"
+  },
+  {
+    "name": "profile___ru",
+    "path": "/ru/profile",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\profile\\\\index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_3ba756d2"
+  },
+  {
+    "name": "test-result___ru___default",
+    "path": "/test/result",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\test\\\\result.vue",
+    "chunkName": "pages/test/result",
+    "_name": "_0808a290"
+  },
+  {
+    "name": "blog___uz",
+    "path": "/uz/blog",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_6d4f4677"
+  },
+  {
+    "name": "courses___uz",
+    "path": "/uz/courses",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\courses\\\\index.vue",
+    "chunkName": "pages/courses/index",
+    "_name": "_f27da53a"
+  },
+  {
+    "name": "notifications___uz",
+    "path": "/uz/notifications",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\notifications\\\\index.vue",
+    "chunkName": "pages/notifications/index",
+    "_name": "_8d54951a"
+  },
+  {
+    "name": "profile___uz",
+    "path": "/uz/profile",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\profile\\\\index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_3ba756d2"
+  },
+  {
+    "name": "blog-create___ru",
+    "path": "/ru/blog/create",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\create.vue",
+    "chunkName": "pages/blog/create",
+    "_name": "_644dd327"
+  },
+  {
+    "name": "test-result___ru",
+    "path": "/ru/test/result",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\test\\\\result.vue",
+    "chunkName": "pages/test/result",
+    "_name": "_0808a290"
+  },
+  {
+    "name": "blog-create___uz",
+    "path": "/uz/blog/create",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\create.vue",
+    "chunkName": "pages/blog/create",
+    "_name": "_644dd327"
+  },
+  {
+    "name": "test-result___uz",
+    "path": "/uz/test/result",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\test\\\\result.vue",
+    "chunkName": "pages/test/result",
+    "_name": "_0808a290"
+  },
+  {
+    "name": "index___ru___default",
+    "path": "/",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0eefebce"
+  },
+  {
+    "name": "blog-id___ru",
+    "path": "/ru/blog/:id",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\_id.vue",
+    "chunkName": "pages/blog/_id",
+    "_name": "_5a1a7a9f"
+  },
+  {
+    "name": "certificates-id___ru",
+    "path": "/ru/certificates/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\certificates\\\\_id.vue",
+    "chunkName": "pages/certificates/_id",
+    "_name": "_ea705276"
+  },
+  {
+    "name": "courses-slug___ru",
+    "path": "/ru/courses/:slug",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\courses\\\\_slug.vue",
+    "chunkName": "pages/courses/_slug",
+    "_name": "_f5eae7ca"
+  },
+  {
+    "name": "lessons-id___ru",
+    "path": "/ru/lessons/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\lessons\\\\_id.vue",
+    "chunkName": "pages/lessons/_id",
+    "_name": "_3bea0d30"
+  },
+  {
+    "name": "test-id___ru",
+    "path": "/ru/test/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\test\\\\_id.vue",
+    "chunkName": "pages/test/_id",
+    "_name": "_b67a18a2"
+  },
+  {
+    "name": "blog-id___uz",
+    "path": "/uz/blog/:id",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\_id.vue",
+    "chunkName": "pages/blog/_id",
+    "_name": "_5a1a7a9f"
+  },
+  {
+    "name": "certificates-id___uz",
+    "path": "/uz/certificates/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\certificates\\\\_id.vue",
+    "chunkName": "pages/certificates/_id",
+    "_name": "_ea705276"
+  },
+  {
+    "name": "courses-slug___uz",
+    "path": "/uz/courses/:slug",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\courses\\\\_slug.vue",
+    "chunkName": "pages/courses/_slug",
+    "_name": "_f5eae7ca"
+  },
+  {
+    "name": "lessons-id___uz",
+    "path": "/uz/lessons/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\lessons\\\\_id.vue",
+    "chunkName": "pages/lessons/_id",
+    "_name": "_3bea0d30"
+  },
+  {
+    "name": "test-id___uz",
+    "path": "/uz/test/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\test\\\\_id.vue",
+    "chunkName": "pages/test/_id",
+    "_name": "_b67a18a2"
+  },
+  {
+    "name": "blog-id___ru___default",
+    "path": "/blog/:id",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\blog\\\\_id.vue",
+    "chunkName": "pages/blog/_id",
+    "_name": "_5a1a7a9f"
+  },
+  {
+    "name": "certificates-id___ru___default",
+    "path": "/certificates/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\certificates\\\\_id.vue",
+    "chunkName": "pages/certificates/_id",
+    "_name": "_ea705276"
+  },
+  {
+    "name": "courses-slug___ru___default",
+    "path": "/courses/:slug",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\courses\\\\_slug.vue",
+    "chunkName": "pages/courses/_slug",
+    "_name": "_f5eae7ca"
+  },
+  {
+    "name": "lessons-id___ru___default",
+    "path": "/lessons/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\lessons\\\\_id.vue",
+    "chunkName": "pages/lessons/_id",
+    "_name": "_3bea0d30"
+  },
+  {
+    "name": "test-id___ru___default",
+    "path": "/test/:id?",
+    "component": "C:\\\\Users\\\\user\\\\Code\\\\Work\\\\jobhunt\\\\infinitysales-learning\\\\pages\\\\test\\\\_id.vue",
+    "chunkName": "pages/test/_id",
+    "_name": "_b67a18a2"
+  }
+]

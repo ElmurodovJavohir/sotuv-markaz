@@ -1,0 +1,70 @@
+- generic [ref=e4]:
+  - banner [ref=e6]:
+    - generic [ref=e8]:
+      - link "link" [ref=e10] [cursor=pointer]:
+        - /url: /ru
+        - img "Infinity Sales" [ref=e11]
+      - generic [ref=e13]:
+        - button [ref=e15] [cursor=pointer]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - img [ref=e21]
+        - link "link" [ref=e23] [cursor=pointer]:
+          - /url: /ru/worker/login
+          - img [ref=e24]
+          - paragraph [ref=e26]: Войти
+        - link "link" [ref=e27] [cursor=pointer]:
+          - /url: /ru/worker/register
+          - text: Создать резюме
+      - generic [ref=e29]:
+        - link "link" [ref=e30] [cursor=pointer]:
+          - /url: /ru/
+          - img [ref=e32]
+          - text: Поиск работы
+        - link "link" [ref=e35] [cursor=pointer]:
+          - /url: /ru/company
+          - img [ref=e37]
+          - text: Поиск сотрудников
+  - main [ref=e41]:
+    - generic [ref=e44]:
+      - generic [ref=e47]:
+        - link "F.A.Q" [ref=e48] [cursor=pointer]:
+          - /url: /ru/worker/faq
+        - link "Вопросы по категориям" [ref=e49] [cursor=pointer]:
+          - /url: /ru/worker/faq/questions
+        - link "Написать письмо" [ref=e50] [cursor=pointer]:
+          - /url: /ru/worker/faq/message
+      - generic [ref=e52]:
+        - heading "F.A.Q" [level=2] [ref=e53]
+        - tablist [ref=e56]:
+          - tab "+" [ref=e58]:
+            - button "+" [ref=e59] [cursor=pointer]:
+              - generic [ref=e60]: +
+          - tab "+" [ref=e62]:
+            - button "+" [ref=e63] [cursor=pointer]:
+              - generic [ref=e64]: +
+          - tab "+" [ref=e66]:
+            - button "+" [ref=e67] [cursor=pointer]:
+              - generic [ref=e68]: +
+  - main [ref=e70]:
+    - generic [ref=e73]:
+      - generic [ref=e76]:
+        - link "F.A.Q" [ref=e77] [cursor=pointer]:
+          - /url: /ru/worker/faq
+        - link "Вопросы по категориям" [ref=e78] [cursor=pointer]:
+          - /url: /ru/worker/faq/questions
+        - link "Написать письмо" [ref=e79] [cursor=pointer]:
+          - /url: /ru/worker/faq/message
+      - generic [ref=e81]:
+        - heading "F.A.Q" [level=2] [ref=e82]
+        - tablist [ref=e85]:
+          - tab "+" [ref=e87]:
+            - button "+" [ref=e88] [cursor=pointer]:
+              - generic [ref=e89]: +
+          - tab "+" [ref=e91]:
+            - button "+" [ref=e92] [cursor=pointer]:
+              - generic [ref=e93]: +
+          - tab "+" [ref=e95]:
+            - button "+" [ref=e96] [cursor=pointer]:
+              - generic [ref=e97]: +
+  - contentinfo

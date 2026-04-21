@@ -1,0 +1,128 @@
+- generic [ref=e4]:
+  - banner [ref=e6]:
+    - generic [ref=e8]:
+      - link "link" [ref=e10] [cursor=pointer]:
+        - /url: /ru
+        - img "Infinity Sales" [ref=e11]
+      - generic [ref=e13]:
+        - button [ref=e15] [cursor=pointer]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - img [ref=e21]
+        - link "link" [ref=e23] [cursor=pointer]:
+          - /url: /ru/worker/login
+          - img [ref=e24]
+          - paragraph [ref=e26]: Войти
+        - link "link" [ref=e27] [cursor=pointer]:
+          - /url: /ru/worker/register
+          - text: Создать резюме
+      - generic [ref=e29]:
+        - link "link" [ref=e30] [cursor=pointer]:
+          - /url: /ru/
+          - img [ref=e32]
+          - text: Поиск работы
+        - link "link" [ref=e35] [cursor=pointer]:
+          - /url: /ru/company
+          - img [ref=e37]
+          - text: Поиск сотрудников
+  - generic [ref=e43]:
+    - heading "Создать резюме" [level=2] [ref=e44]
+    - generic [ref=e46]:
+      - heading "Основная информация" [level=3] [ref=e47]
+      - generic [ref=e48]:
+        - generic [ref=e49]: Аватар
+        - generic [ref=e50]:
+          - generic [ref=e54]:
+            - img [ref=e56] [cursor=pointer]
+            - button [ref=e57] [cursor=pointer]
+          - text: "*загрузите аватар профиля"
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - text: Регион
+            - superscript [ref=e61]: "*"
+          - generic [ref=e63]:
+            - textbox "Регион" [ref=e64] [cursor=pointer]
+            - generic [ref=e66] [cursor=pointer]: 
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - text: Город/район
+            - superscript [ref=e69]: "*"
+          - generic [ref=e71]:
+            - textbox "Город/район" [ref=e72] [cursor=pointer]
+            - generic [ref=e74] [cursor=pointer]: 
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - text: Коротко о себе
+          - superscript [ref=e77]: "*"
+        - text: (мин 15 символов)
+        - textbox "Напишите о себе" [ref=e79]
+    - generic [ref=e80]:
+      - heading "Контактные данные" [level=2] [ref=e81]
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - text: Телефон
+              - superscript [ref=e86]: "*"
+            - generic [ref=e87]:
+              - generic [ref=e88]: "+998"
+              - textbox "90 123 45 67" [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]: Ваш адрес электронной почты
+            - textbox "info@infinitysales.uz" [ref=e92]
+        - generic [ref=e94]:
+          - generic [ref=e95]: Социальные сети
+          - paragraph [ref=e96] [cursor=pointer]:
+            - img [ref=e97]
+            - text: Добавить соц.сети
+    - generic [ref=e98]:
+      - heading "Специализированные данные" [level=2] [ref=e99]
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - text: Профессиональная область*
+            - superscript [ref=e103]: "*"
+          - generic [ref=e105]:
+            - textbox "Выберите категорию" [ref=e106] [cursor=pointer]
+            - generic [ref=e108] [cursor=pointer]: 
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - text: Специализация*
+            - superscript [ref=e111]: "*"
+          - generic [ref=e113]:
+            - textbox "Выберите специализацию" [disabled] [ref=e114]
+            - generic [ref=e116]: 
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - text: Ожидаемая зарплата
+            - superscript [ref=e120]: "*"
+          - generic [ref=e122]:
+            - textbox "UZS" [ref=e123] [cursor=pointer]
+            - generic [ref=e125] [cursor=pointer]: 
+        - generic [ref=e126]:
+          - spinbutton [ref=e127]
+          - generic [ref=e128] [cursor=pointer]:
+            - img [ref=e129]
+            - paragraph [ref=e131]: Расчитать
+    - generic [ref=e134]:
+      - heading "Есть ли у вас образование? *" [level=3] [ref=e135]
+      - checkbox [ref=e137] [cursor=pointer]
+    - generic [ref=e140]:
+      - heading "Имеете ли вы опыт работы? *" [level=3] [ref=e141]
+      - checkbox [ref=e143] [cursor=pointer]
+    - generic [ref=e145]:
+      - heading "Знаете ли вы иностранные языки? *" [level=3] [ref=e146]
+      - checkbox [ref=e148] [cursor=pointer]
+    - generic [ref=e150]:
+      - heading "Какими навыками вы владеете? *" [level=3] [ref=e151]
+      - checkbox [ref=e153] [cursor=pointer]
+    - generic [ref=e155]:
+      - heading "Лицензии и сертификаты" [level=3] [ref=e156]
+      - checkbox [ref=e158] [cursor=pointer]
+    - generic [ref=e160]:
+      - heading "Водительские права" [level=3] [ref=e161]
+      - checkbox [ref=e163] [cursor=pointer]
+    - button "Сохранить и опубликовать" [ref=e164] [cursor=pointer]
+  - contentinfo

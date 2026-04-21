@@ -1,0 +1,28 @@
+[    3510ms] [INFO] Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools @ webpack-internal:///./node_modules/vue/dist/vue.runtime.esm.js:8841
+[    3510ms] [INFO] You are running Vue in development mode.
+Make sure to turn on production mode when deploying for production.
+See more tips at https://vuejs.org/guide/deployment.html @ webpack-internal:///./node_modules/vue/dist/vue.runtime.esm.js:8849
+[    3511ms] [INFO] Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools @ webpack-internal:///./node_modules/vue/dist/vue.runtime.common.dev.js:8719
+[    3511ms] [INFO] You are running Vue in development mode.
+Make sure to turn on production mode when deploying for production.
+See more tips at https://vuejs.org/guide/deployment.html @ webpack-internal:///./node_modules/vue/dist/vue.runtime.common.dev.js:8726
+[    3533ms] [INFO] [nuxt-facebook-pixel-module] You are running in development mode. Set "debug: true" in your nuxt.config.js if you would like to trigger tracking events in local. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    3611ms] [LOG] [HMR] connected @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6038ms] [WARNING] [vue-i18n] Value of key 'Twitter' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6040ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Twitter'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6041ms] [WARNING] [vue-i18n] Value of key 'Twitter' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6043ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Twitter'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6044ms] [WARNING] [vue-i18n] Value of key 'Telegram' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6045ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Telegram'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6047ms] [WARNING] [vue-i18n] Value of key 'Telegram' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6048ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Telegram'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6085ms] [WARNING] [vue-i18n] Value of key 'Twitter' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6086ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Twitter'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6087ms] [WARNING] [vue-i18n] Value of key 'Twitter' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6088ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Twitter'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6089ms] [WARNING] [vue-i18n] Value of key 'Telegram' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6090ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Telegram'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6091ms] [WARNING] [vue-i18n] Value of key 'Telegram' is not a string or function ! @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118
+[    6092ms] [WARNING] [vue-i18n] Cannot translate the value of keypath 'Telegram'. Use the value of keypath as default. @ webpack-internal:///./node_modules/@sentry/utils/esm/instrument.js:118

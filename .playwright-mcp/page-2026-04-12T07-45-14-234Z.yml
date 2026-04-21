@@ -1,0 +1,391 @@
+- generic [ref=e4]:
+  - banner [ref=e6]:
+    - generic [ref=e8]:
+      - link "link" [ref=e10] [cursor=pointer]:
+        - /url: /ru
+        - img "Infinity Sales" [ref=e11]
+      - generic [ref=e13]:
+        - button [ref=e15] [cursor=pointer]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - img [ref=e21]
+        - link "link" [ref=e23] [cursor=pointer]:
+          - /url: /ru/worker/login
+          - img [ref=e24]
+          - paragraph [ref=e26]: Войти
+        - link "link" [ref=e27] [cursor=pointer]:
+          - /url: /ru/worker/register
+          - text: Создать резюме
+      - generic [ref=e29]:
+        - link "link" [ref=e30] [cursor=pointer]:
+          - /url: /ru/
+          - img [ref=e32]
+          - text: Поиск работы
+        - link "link" [ref=e35] [cursor=pointer]:
+          - /url: /ru/company
+          - img [ref=e37]
+          - text: Поиск сотрудников
+  - generic [ref=e41]:
+    - main [ref=e42]:
+      - generic [ref=e46]:
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - heading "Все вакансии" [level=1] [ref=e52]
+            - generic [ref=e53] [cursor=pointer]:
+              - button "button" [ref=e54]:
+                - img [ref=e55]
+              - button "button" [ref=e58]:
+                - img [ref=e59]
+          - generic [ref=e65]:
+            - generic [ref=e67] [cursor=pointer]:
+              - generic [ref=e68]:
+                - generic [ref=e72]: lorem
+                - generic [ref=e73]: lorem
+                - generic [ref=e74]: lorem до lorem UZS
+              - generic [ref=e75]:
+                - generic [ref=e77]: lorem р-н, lorem
+                - generic [ref=e78]:
+                  - generic [ref=e79]: lorem
+                  - img [ref=e81]
+            - generic [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]:
+                - generic [ref=e89]: lorem
+                - generic [ref=e90]: lorem
+                - generic [ref=e91]: lorem до lorem UZS
+              - generic [ref=e92]:
+                - generic [ref=e94]: lorem р-н, lorem
+                - generic [ref=e95]:
+                  - generic [ref=e96]: lorem
+                  - img [ref=e98]
+            - generic [ref=e101] [cursor=pointer]:
+              - generic [ref=e102]:
+                - generic [ref=e106]: lorem
+                - generic [ref=e107]: lorem
+                - generic [ref=e108]: lorem до lorem UZS
+              - generic [ref=e109]:
+                - generic [ref=e111]: lorem р-н, lorem
+                - generic [ref=e112]:
+                  - generic [ref=e113]: lorem
+                  - img [ref=e115]
+            - generic [ref=e118] [cursor=pointer]:
+              - generic [ref=e119]:
+                - generic [ref=e123]: lorem
+                - generic [ref=e124]: lorem
+                - generic [ref=e125]: lorem до lorem UZS
+              - generic [ref=e126]:
+                - generic [ref=e128]: lorem р-н, lorem
+                - generic [ref=e129]:
+                  - generic [ref=e130]: lorem
+                  - img [ref=e132]
+            - generic [ref=e135] [cursor=pointer]:
+              - generic [ref=e136]:
+                - generic [ref=e140]: lorem
+                - generic [ref=e141]: lorem
+                - generic [ref=e142]: lorem до lorem UZS
+              - generic [ref=e143]:
+                - generic [ref=e145]: lorem р-н, lorem
+                - generic [ref=e146]:
+                  - generic [ref=e147]: lorem
+                  - img [ref=e149]
+            - generic [ref=e152] [cursor=pointer]:
+              - generic [ref=e153]:
+                - generic [ref=e157]: lorem
+                - generic [ref=e158]: lorem
+                - generic [ref=e159]: lorem до lorem UZS
+              - generic [ref=e160]:
+                - generic [ref=e162]: lorem р-н, lorem
+                - generic [ref=e163]:
+                  - generic [ref=e164]: lorem
+                  - img [ref=e166]
+            - generic [ref=e169] [cursor=pointer]:
+              - generic [ref=e170]:
+                - generic [ref=e174]: lorem
+                - generic [ref=e175]: lorem
+                - generic [ref=e176]: lorem до lorem UZS
+              - generic [ref=e177]:
+                - generic [ref=e179]: lorem р-н, lorem
+                - generic [ref=e180]:
+                  - generic [ref=e181]: lorem
+                  - img [ref=e183]
+            - generic [ref=e186] [cursor=pointer]:
+              - generic [ref=e187]:
+                - generic [ref=e191]: lorem
+                - generic [ref=e192]: lorem
+                - generic [ref=e193]: lorem до lorem UZS
+              - generic [ref=e194]:
+                - generic [ref=e196]: lorem р-н, lorem
+                - generic [ref=e197]:
+                  - generic [ref=e198]: lorem
+                  - img [ref=e200]
+            - generic [ref=e203] [cursor=pointer]:
+              - generic [ref=e204]:
+                - generic [ref=e208]: lorem
+                - generic [ref=e209]: lorem
+                - generic [ref=e210]: lorem до lorem UZS
+              - generic [ref=e211]:
+                - generic [ref=e213]: lorem р-н, lorem
+                - generic [ref=e214]:
+                  - generic [ref=e215]: lorem
+                  - img [ref=e217]
+            - generic [ref=e220] [cursor=pointer]:
+              - generic [ref=e221]:
+                - generic [ref=e225]: lorem
+                - generic [ref=e226]: lorem
+                - generic [ref=e227]: lorem до lorem UZS
+              - generic [ref=e228]:
+                - generic [ref=e230]: lorem р-н, lorem
+                - generic [ref=e231]:
+                  - generic [ref=e232]: lorem
+                  - img [ref=e234]
+            - generic [ref=e237] [cursor=pointer]:
+              - generic [ref=e238]:
+                - generic [ref=e242]: lorem
+                - generic [ref=e243]: lorem
+                - generic [ref=e244]: lorem до lorem UZS
+              - generic [ref=e245]:
+                - generic [ref=e247]: lorem р-н, lorem
+                - generic [ref=e248]:
+                  - generic [ref=e249]: lorem
+                  - img [ref=e251]
+            - generic [ref=e254] [cursor=pointer]:
+              - generic [ref=e255]:
+                - generic [ref=e259]: lorem
+                - generic [ref=e260]: lorem
+                - generic [ref=e261]: lorem до lorem UZS
+              - generic [ref=e262]:
+                - generic [ref=e264]: lorem р-н, lorem
+                - generic [ref=e265]:
+                  - generic [ref=e266]: lorem
+                  - img [ref=e268]
+            - generic [ref=e271] [cursor=pointer]:
+              - generic [ref=e272]:
+                - generic [ref=e276]: lorem
+                - generic [ref=e277]: lorem
+                - generic [ref=e278]: lorem до lorem UZS
+              - generic [ref=e279]:
+                - generic [ref=e281]: lorem р-н, lorem
+                - generic [ref=e282]:
+                  - generic [ref=e283]: lorem
+                  - img [ref=e285]
+            - generic [ref=e288] [cursor=pointer]:
+              - generic [ref=e289]:
+                - generic [ref=e293]: lorem
+                - generic [ref=e294]: lorem
+                - generic [ref=e295]: lorem до lorem UZS
+              - generic [ref=e296]:
+                - generic [ref=e298]: lorem р-н, lorem
+                - generic [ref=e299]:
+                  - generic [ref=e300]: lorem
+                  - img [ref=e302]
+            - generic [ref=e305] [cursor=pointer]:
+              - generic [ref=e306]:
+                - generic [ref=e310]: lorem
+                - generic [ref=e311]: lorem
+                - generic [ref=e312]: lorem до lorem UZS
+              - generic [ref=e313]:
+                - generic [ref=e315]: lorem р-н, lorem
+                - generic [ref=e316]:
+                  - generic [ref=e317]: lorem
+                  - img [ref=e319]
+            - generic [ref=e322] [cursor=pointer]:
+              - generic [ref=e323]:
+                - generic [ref=e327]: lorem
+                - generic [ref=e328]: lorem
+                - generic [ref=e329]: lorem до lorem UZS
+              - generic [ref=e330]:
+                - generic [ref=e332]: lorem р-н, lorem
+                - generic [ref=e333]:
+                  - generic [ref=e334]: lorem
+                  - img [ref=e336]
+            - generic [ref=e339] [cursor=pointer]:
+              - generic [ref=e340]:
+                - generic [ref=e344]: lorem
+                - generic [ref=e345]: lorem
+                - generic [ref=e346]: lorem до lorem UZS
+              - generic [ref=e347]:
+                - generic [ref=e349]: lorem р-н, lorem
+                - generic [ref=e350]:
+                  - generic [ref=e351]: lorem
+                  - img [ref=e353]
+            - generic [ref=e356] [cursor=pointer]:
+              - generic [ref=e357]:
+                - generic [ref=e361]: lorem
+                - generic [ref=e362]: lorem
+                - generic [ref=e363]: lorem до lorem UZS
+              - generic [ref=e364]:
+                - generic [ref=e366]: lorem р-н, lorem
+                - generic [ref=e367]:
+                  - generic [ref=e368]: lorem
+                  - img [ref=e370]
+            - generic [ref=e373] [cursor=pointer]:
+              - generic [ref=e374]:
+                - generic [ref=e378]: lorem
+                - generic [ref=e379]: lorem
+                - generic [ref=e380]: lorem до lorem UZS
+              - generic [ref=e381]:
+                - generic [ref=e383]: lorem р-н, lorem
+                - generic [ref=e384]:
+                  - generic [ref=e385]: lorem
+                  - img [ref=e387]
+            - generic [ref=e390] [cursor=pointer]:
+              - generic [ref=e391]:
+                - generic [ref=e395]: lorem
+                - generic [ref=e396]: lorem
+                - generic [ref=e397]: lorem до lorem UZS
+              - generic [ref=e398]:
+                - generic [ref=e400]: lorem р-н, lorem
+                - generic [ref=e401]:
+                  - generic [ref=e402]: lorem
+                  - img [ref=e404]
+            - generic [ref=e407] [cursor=pointer]:
+              - generic [ref=e408]:
+                - generic [ref=e412]: lorem
+                - generic [ref=e413]: lorem
+                - generic [ref=e414]: lorem до lorem UZS
+              - generic [ref=e415]:
+                - generic [ref=e417]: lorem р-н, lorem
+                - generic [ref=e418]:
+                  - generic [ref=e419]: lorem
+                  - img [ref=e421]
+            - generic [ref=e424] [cursor=pointer]:
+              - generic [ref=e425]:
+                - generic [ref=e429]: lorem
+                - generic [ref=e430]: lorem
+                - generic [ref=e431]: lorem до lorem UZS
+              - generic [ref=e432]:
+                - generic [ref=e434]: lorem р-н, lorem
+                - generic [ref=e435]:
+                  - generic [ref=e436]: lorem
+                  - img [ref=e438]
+            - generic [ref=e441] [cursor=pointer]:
+              - generic [ref=e442]:
+                - generic [ref=e446]: lorem
+                - generic [ref=e447]: lorem
+                - generic [ref=e448]: lorem до lorem UZS
+              - generic [ref=e449]:
+                - generic [ref=e451]: lorem р-н, lorem
+                - generic [ref=e452]:
+                  - generic [ref=e453]: lorem
+                  - img [ref=e455]
+            - generic [ref=e458] [cursor=pointer]:
+              - generic [ref=e459]:
+                - generic [ref=e463]: lorem
+                - generic [ref=e464]: lorem
+                - generic [ref=e465]: lorem до lorem UZS
+              - generic [ref=e466]:
+                - generic [ref=e468]: lorem р-н, lorem
+                - generic [ref=e469]:
+                  - generic [ref=e470]: lorem
+                  - img [ref=e472]
+        - generic [ref=e477]:
+          - generic [ref=e478]:
+            - button "Виды объявлений" [ref=e479] [cursor=pointer]:
+              - heading "Виды объявлений" [level=5] [ref=e480]
+              - img [ref=e482]
+            - list [ref=e485]:
+              - generic [ref=e486]:
+                - checkbox "Все объявления 0 Все объявления 0" [checked] [disabled]
+                - listitem [ref=e488] [cursor=pointer]:
+                  - generic [ref=e490]: Все объявления
+                  - generic [ref=e491]: "0"
+              - group [ref=e492]:
+                - generic [ref=e493]:
+                  - checkbox "Обычные объявления 0 Обычные объявления 0" [checked]
+                  - listitem [ref=e495] [cursor=pointer]:
+                    - generic [ref=e497]: Обычные объявления
+                    - generic [ref=e498]: "0"
+                - generic [ref=e499]:
+                  - checkbox "Премиум 0 Премиум 0" [checked]
+                  - listitem [ref=e501] [cursor=pointer]:
+                    - generic [ref=e503]:
+                      - img [ref=e505]
+                      - text: Премиум
+                    - generic [ref=e507]: "0"
+                - generic [ref=e508]:
+                  - checkbox "Срочные 0 Срочные 0" [checked]
+                  - listitem [ref=e510] [cursor=pointer]:
+                    - generic [ref=e512]:
+                      - img [ref=e514]
+                      - text: Срочные
+                    - generic [ref=e516]: "0"
+          - generic [ref=e517]:
+            - button "Вакансии за период" [ref=e518] [cursor=pointer]:
+              - heading "Вакансии за период" [level=5] [ref=e519]
+              - img [ref=e521]
+            - list [ref=e524]:
+              - listitem [ref=e525]:
+                - generic [ref=e526]:
+                  - radio "24 часа 24 часа"
+                  - generic [ref=e527] [cursor=pointer]: 24 часа
+                - generic [ref=e528]: "0"
+              - listitem [ref=e529]:
+                - generic [ref=e530]:
+                  - radio "3 дня 3 дня"
+                  - generic [ref=e531] [cursor=pointer]: 3 дня
+                - generic [ref=e532]: "0"
+              - listitem [ref=e533]:
+                - generic [ref=e534]:
+                  - radio "7 дней 7 дней"
+                  - generic [ref=e535] [cursor=pointer]: 7 дней
+                - generic [ref=e536]: "0"
+              - listitem [ref=e537]:
+                - generic [ref=e538]:
+                  - radio "14 дней 14 дней"
+                  - generic [ref=e539] [cursor=pointer]: 14 дней
+                - generic [ref=e540]: "0"
+              - listitem [ref=e541]:
+                - generic [ref=e542]:
+                  - radio "За всё время За всё время"
+                  - generic [ref=e543] [cursor=pointer]: За всё время
+                - generic [ref=e544]: "0"
+          - generic [ref=e545]:
+            - button "З/П" [ref=e546] [cursor=pointer]:
+              - heading "З/П" [level=5] [ref=e547]
+              - img [ref=e549]
+            - list [ref=e552]:
+              - listitem [ref=e553]:
+                - generic [ref=e554]:
+                  - radio "Не имеет значения Не имеет значения"
+                  - generic [ref=e555] [cursor=pointer]: Не имеет значения
+                - generic [ref=e556]: "0"
+              - listitem [ref=e557]:
+                - generic [ref=e558]:
+                  - radio "0 - 0 0 - 0"
+                  - generic [ref=e559] [cursor=pointer]: 0 - 0
+                - generic [ref=e560]: "0"
+              - listitem [ref=e561]:
+                - generic [ref=e562]:
+                  - radio "0 - 0 0 - 0"
+                  - generic [ref=e563] [cursor=pointer]: 0 - 0
+                - generic [ref=e564]: "0"
+              - listitem [ref=e565]:
+                - generic [ref=e566]:
+                  - radio "0 - 0 0 - 0"
+                  - generic [ref=e567] [cursor=pointer]: 0 - 0
+                - generic [ref=e568]: "0"
+              - listitem [ref=e569]:
+                - generic [ref=e570]:
+                  - radio "0 - 0 0 - 0"
+                  - generic [ref=e571] [cursor=pointer]: 0 - 0
+                - generic [ref=e572]: "0"
+          - generic [ref=e573]:
+            - button "Город/район" [ref=e574] [cursor=pointer]:
+              - heading "Город/район" [level=5] [ref=e575]
+              - img [ref=e577]
+            - generic [ref=e579]:
+              - generic [ref=e581]:
+                - textbox "Выберите область" [ref=e582] [cursor=pointer]
+                - generic [ref=e584] [cursor=pointer]: 
+              - list
+          - generic [ref=e585]:
+            - button "Отрасль" [ref=e586] [cursor=pointer]:
+              - heading "Отрасль" [level=5] [ref=e587]
+              - img [ref=e589]
+            - generic [ref=e591]:
+              - generic [ref=e592]:
+                - checkbox "Все отрасли Все отрасли" [checked] [disabled]
+                - listitem [ref=e594] [cursor=pointer]:
+                  - generic [ref=e596]: Все отрасли
+              - group
+    - text: 
+  - contentinfo

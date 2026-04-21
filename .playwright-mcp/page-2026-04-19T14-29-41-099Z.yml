@@ -1,0 +1,413 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "link" [ref=e9] [cursor=pointer]:
+        - /url: /ru
+        - img "Infinity Sales" [ref=e10]
+      - generic [ref=e12]:
+        - button [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]:
+            - img [ref=e16]
+            - img [ref=e20]
+        - link "link" [ref=e22] [cursor=pointer]:
+          - /url: /ru/login?role=worker
+          - img [ref=e23]
+          - paragraph [ref=e25]: Войти
+        - link "link" [ref=e26] [cursor=pointer]:
+          - /url: /ru/learn
+          - img [ref=e27]
+          - paragraph [ref=e31]: Learn
+        - link "link" [ref=e32] [cursor=pointer]:
+          - /url: /ru/worker/register
+          - text: Создать резюме
+      - generic [ref=e34]:
+        - link "link" [ref=e35] [cursor=pointer]:
+          - /url: /ru/
+          - img [ref=e37]
+          - text: Поиск работы
+        - link "link" [ref=e40] [cursor=pointer]:
+          - /url: /ru/company
+          - img [ref=e42]
+          - text: Поиск сотрудников
+  - main [ref=e46]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - heading "Коммерческие предложения компаний" [level=2] [ref=e53]
+        - paragraph [ref=e54]: Компании предлагают услуги и решения для увеличения продаж
+      - link "link" [ref=e55]:
+        - /url: "#"
+        - text: Все компании
+    - generic [ref=e68]:
+      - generic [ref=e71]:
+        - heading "Отрасли По отраслям" [level=2] [ref=e72]:
+          - generic [ref=e73]: Отрасли
+          - generic [ref=e74]: По отраслям
+        - link "link" [ref=e75]:
+          - /url: "#"
+          - generic [ref=e76]: Все отрасли
+          - img [ref=e78]
+      - generic [ref=e81]:
+        - generic [ref=e84]:
+          - paragraph [ref=e85]: lorem lorem lorem
+          - generic [ref=e86]: lorem lorem lorem
+          - generic [ref=e87]:
+            - paragraph [ref=e88]: lorem lorem lorem
+            - list [ref=e89]:
+              - listitem [ref=e90]
+              - listitem [ref=e91]
+              - listitem [ref=e92]
+              - listitem [ref=e93]
+              - listitem [ref=e94]
+        - generic [ref=e97]:
+          - paragraph [ref=e98]: lorem lorem lorem
+          - generic [ref=e99]: lorem lorem lorem
+          - generic [ref=e100]:
+            - paragraph [ref=e101]: lorem lorem lorem
+            - list [ref=e102]:
+              - listitem [ref=e103]
+              - listitem [ref=e104]
+              - listitem [ref=e105]
+              - listitem [ref=e106]
+              - listitem [ref=e107]
+        - generic [ref=e110]:
+          - paragraph [ref=e111]: lorem lorem lorem
+          - generic [ref=e112]: lorem lorem lorem
+          - generic [ref=e113]:
+            - paragraph [ref=e114]: lorem lorem lorem
+            - list [ref=e115]:
+              - listitem [ref=e116]
+              - listitem [ref=e117]
+              - listitem [ref=e118]
+              - listitem [ref=e119]
+              - listitem [ref=e120]
+        - generic [ref=e123]:
+          - paragraph [ref=e124]: lorem lorem lorem
+          - generic [ref=e125]: lorem lorem lorem
+          - generic [ref=e126]:
+            - paragraph [ref=e127]: lorem lorem lorem
+            - list [ref=e128]:
+              - listitem [ref=e129]
+              - listitem [ref=e130]
+              - listitem [ref=e131]
+              - listitem [ref=e132]
+              - listitem [ref=e133]
+        - generic [ref=e136]:
+          - paragraph [ref=e137]: lorem lorem lorem
+          - generic [ref=e138]: lorem lorem lorem
+          - generic [ref=e139]:
+            - paragraph [ref=e140]: lorem lorem lorem
+            - list [ref=e141]:
+              - listitem [ref=e142]
+              - listitem [ref=e143]
+              - listitem [ref=e144]
+              - listitem [ref=e145]
+              - listitem [ref=e146]
+        - generic [ref=e149]:
+          - paragraph [ref=e150]: lorem lorem lorem
+          - generic [ref=e151]: lorem lorem lorem
+          - generic [ref=e152]:
+            - paragraph [ref=e153]: lorem lorem lorem
+            - list [ref=e154]:
+              - listitem [ref=e155]
+              - listitem [ref=e156]
+              - listitem [ref=e157]
+              - listitem [ref=e158]
+              - listitem [ref=e159]
+        - generic [ref=e162]:
+          - paragraph [ref=e163]: lorem lorem lorem
+          - generic [ref=e164]: lorem lorem lorem
+          - generic [ref=e165]:
+            - paragraph [ref=e166]: lorem lorem lorem
+            - list [ref=e167]:
+              - listitem [ref=e168]
+              - listitem [ref=e169]
+              - listitem [ref=e170]
+              - listitem [ref=e171]
+              - listitem [ref=e172]
+        - generic [ref=e175]:
+          - paragraph [ref=e176]: lorem lorem lorem
+          - generic [ref=e177]: lorem lorem lorem
+          - generic [ref=e178]:
+            - paragraph [ref=e179]: lorem lorem lorem
+            - list [ref=e180]:
+              - listitem [ref=e181]
+              - listitem [ref=e182]
+              - listitem [ref=e183]
+              - listitem [ref=e184]
+              - listitem [ref=e185]
+    - generic [ref=e189]:
+      - generic [ref=e192]:
+        - heading "Вакансии По компаниям" [level=2] [ref=e193]:
+          - generic [ref=e194]: Вакансии
+          - text: По компаниям
+        - link "link" [ref=e195]:
+          - /url: "#"
+          - generic [ref=e196]: Все компании
+          - img [ref=e198]
+      - generic [ref=e201]:
+        - link "link" [ref=e203]:
+          - /url: "#"
+          - paragraph [ref=e205]: lorem
+          - paragraph [ref=e206]: lorem
+        - link "link" [ref=e208]:
+          - /url: "#"
+          - paragraph [ref=e210]: lorem
+          - paragraph [ref=e211]: lorem
+        - link "link" [ref=e213]:
+          - /url: "#"
+          - paragraph [ref=e215]: lorem
+          - paragraph [ref=e216]: lorem
+        - link "link" [ref=e218]:
+          - /url: "#"
+          - paragraph [ref=e220]: lorem
+          - paragraph [ref=e221]: lorem
+        - link "link" [ref=e223]:
+          - /url: "#"
+          - paragraph [ref=e225]: lorem
+          - paragraph [ref=e226]: lorem
+        - link "link" [ref=e228]:
+          - /url: "#"
+          - paragraph [ref=e230]: lorem
+          - paragraph [ref=e231]: lorem
+    - generic [ref=e235]:
+      - generic [ref=e238]:
+        - heading "Вакансии Недавно добавленные" [level=2] [ref=e239]:
+          - generic [ref=e240]: Вакансии
+          - generic [ref=e241]: Недавно добавленные
+        - link "link" [ref=e242]:
+          - /url: "#"
+          - generic [ref=e243]: Все вакансии
+          - img [ref=e245]
+      - generic [ref=e248]:
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e253]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e254]
+          - generic [ref=e256]: lorem lorem lorem lorem
+          - paragraph [ref=e258]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e260]:
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e263]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e264]
+          - generic [ref=e266]: lorem lorem lorem lorem
+          - paragraph [ref=e268]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - generic [ref=e272]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e273]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e274]
+          - generic [ref=e276]: lorem lorem lorem lorem
+          - paragraph [ref=e278]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - generic [ref=e282]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e283]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e284]
+          - generic [ref=e286]: lorem lorem lorem lorem
+          - paragraph [ref=e288]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e290]:
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e293]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e294]
+          - generic [ref=e296]: lorem lorem lorem lorem
+          - paragraph [ref=e298]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - generic [ref=e302]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e303]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e304]
+          - generic [ref=e306]: lorem lorem lorem lorem
+          - paragraph [ref=e308]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e310]:
+          - generic [ref=e311]:
+            - generic [ref=e312]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e313]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e314]
+          - generic [ref=e316]: lorem lorem lorem lorem
+          - paragraph [ref=e318]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e320]:
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e323]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e324]
+          - generic [ref=e326]: lorem lorem lorem lorem
+          - paragraph [ref=e328]: lorem lorem lorem lorem lorem lorem
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - link "link":
+                - /url: "#"
+            - generic [ref=e333]: lorem lorem lorem
+            - heading "lorem lorem lorem lorem lorem lorem" [level=6] [ref=e334]
+          - generic [ref=e336]: lorem lorem lorem lorem
+          - paragraph [ref=e338]: lorem lorem lorem lorem lorem lorem
+    - generic [ref=e341]:
+      - generic [ref=e342]:
+        - heading "Загрузив мобильное приложение, ищите работу или сотрудников" [level=3] [ref=e343]
+        - paragraph [ref=e344]: Дополнительное удобство!
+        - paragraph [ref=e346]: Будьте на связи с работодателями и соискателями 24 часа
+      - generic [ref=e347]:
+        - img "QR" [ref=e349]
+        - generic [ref=e350]:
+          - link "Google Play" [ref=e351] [cursor=pointer]:
+            - /url: "#"
+            - img "Google Play" [ref=e352]
+          - link "App Store" [ref=e353] [cursor=pointer]:
+            - /url: "#"
+            - img "App Store" [ref=e354]
+    - generic [ref=e356]:
+      - generic [ref=e357]:
+        - generic [ref=e358]:
+          - heading "Новости" [level=2] [ref=e359]
+          - link "Про профессию" [ref=e360] [cursor=pointer]:
+            - /url: /ru/news
+            - generic [ref=e361]: Про профессию
+            - img [ref=e363]
+        - generic [ref=e367]:
+          - generic [ref=e371]:
+            - paragraph [ref=e372]: lorem ispum
+            - generic [ref=e373]:
+              - paragraph [ref=e374]: 15.21.2154
+              - generic [ref=e375]:
+                - paragraph [ref=e376]: lteom ispum
+                - img [ref=e377]
+          - generic [ref=e382]:
+            - paragraph [ref=e383]: lorem ispum
+            - generic [ref=e384]:
+              - paragraph [ref=e385]: 15.21.2154
+              - generic [ref=e386]:
+                - paragraph [ref=e387]: lteom ispum
+                - img [ref=e388]
+          - generic [ref=e393]:
+            - paragraph [ref=e394]: lorem ispum
+            - generic [ref=e395]:
+              - paragraph [ref=e396]: 15.21.2154
+              - generic [ref=e397]:
+                - paragraph [ref=e398]: lteom ispum
+                - img [ref=e399]
+          - generic [ref=e404]:
+            - paragraph [ref=e405]: lorem ispum
+            - generic [ref=e406]:
+              - paragraph [ref=e407]: 15.21.2154
+              - generic [ref=e408]:
+                - paragraph [ref=e409]: lteom ispum
+                - img [ref=e410]
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - heading "Статьи" [level=2] [ref=e414]
+          - link "Все статьи" [ref=e415] [cursor=pointer]:
+            - /url: /ru/blog
+            - generic [ref=e416]: Все статьи
+            - img [ref=e418]
+        - generic [ref=e422]:
+          - generic [ref=e426]:
+            - paragraph [ref=e427]: lorem ispum
+            - generic [ref=e428]:
+              - paragraph [ref=e429]: 15.21.2154
+              - generic [ref=e430]:
+                - paragraph [ref=e431]: lteom ispum
+                - img [ref=e432]
+          - generic [ref=e437]:
+            - paragraph [ref=e438]: lorem ispum
+            - generic [ref=e439]:
+              - paragraph [ref=e440]: 15.21.2154
+              - generic [ref=e441]:
+                - paragraph [ref=e442]: lteom ispum
+                - img [ref=e443]
+          - generic [ref=e448]:
+            - paragraph [ref=e449]: lorem ispum
+            - generic [ref=e450]:
+              - paragraph [ref=e451]: 15.21.2154
+              - generic [ref=e452]:
+                - paragraph [ref=e453]: lteom ispum
+                - img [ref=e454]
+          - generic [ref=e459]:
+            - paragraph [ref=e460]: lorem ispum
+            - generic [ref=e461]:
+              - paragraph [ref=e462]: 15.21.2154
+              - generic [ref=e463]:
+                - paragraph [ref=e464]: lteom ispum
+                - img [ref=e465]
+      - generic [ref=e467]:
+        - generic [ref=e468]:
+          - heading "Все мероприятии" [level=2] [ref=e469]
+          - link "Мероприятия" [ref=e470] [cursor=pointer]:
+            - /url: /ru/events
+            - generic [ref=e471]: Мероприятия
+            - img [ref=e473]
+        - generic [ref=e477]:
+          - generic [ref=e481]:
+            - paragraph [ref=e482]: lorem ispum
+            - generic [ref=e483]:
+              - paragraph [ref=e484]: 15.21.2154
+              - generic [ref=e485]:
+                - paragraph [ref=e486]: lteom ispum
+                - img [ref=e487]
+          - generic [ref=e492]:
+            - paragraph [ref=e493]: lorem ispum
+            - generic [ref=e494]:
+              - paragraph [ref=e495]: 15.21.2154
+              - generic [ref=e496]:
+                - paragraph [ref=e497]: lteom ispum
+                - img [ref=e498]
+          - generic [ref=e503]:
+            - paragraph [ref=e504]: lorem ispum
+            - generic [ref=e505]:
+              - paragraph [ref=e506]: 15.21.2154
+              - generic [ref=e507]:
+                - paragraph [ref=e508]: lteom ispum
+                - img [ref=e509]
+          - generic [ref=e514]:
+            - paragraph [ref=e515]: lorem ispum
+            - generic [ref=e516]:
+              - paragraph [ref=e517]: 15.21.2154
+              - generic [ref=e518]:
+                - paragraph [ref=e519]: lteom ispum
+                - img [ref=e520]
+    - generic [ref=e522]:
+      - generic [ref=e524]:
+        - heading "Отзывы Отзывы пользователей платформы" [level=3] [ref=e529]:
+          - generic [ref=e530]: Отзывы
+          - text: Отзывы пользователей платформы
+        - generic [ref=e531]:
+          - generic [ref=e534]:
+            - link "link" [ref=e537] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e540]:
+                - paragraph [ref=e541]: lorem lorem
+                - generic [ref=e542]: lorem
+              - paragraph [ref=e544]: lorem lorem lorem lorem lorem lorem lorem
+            - link "link" [ref=e547] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e550]:
+                - paragraph [ref=e551]: lorem lorem
+                - generic [ref=e552]: lorem
+              - paragraph [ref=e554]: lorem lorem lorem lorem lorem lorem lorem
+            - link "link" [ref=e557] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e560]:
+                - paragraph [ref=e561]: lorem lorem
+                - generic [ref=e562]: lorem
+              - paragraph [ref=e564]: lorem lorem lorem lorem lorem lorem lorem
+          - button "Добавить комментарий" [ref=e565]
+      - button "Добавить комментарий" [ref=e566] [cursor=pointer]
+  - contentinfo

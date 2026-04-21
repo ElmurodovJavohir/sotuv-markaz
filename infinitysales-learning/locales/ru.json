@@ -1,0 +1,157 @@
+{
+  "header": {
+    "employer": "Работодатель",
+    "jobseeker": "Соискатель"
+  },
+  "sidebar": {
+    "elearning": "Onlayn ta'lim",
+    "allCourses": "Barcha kurslar",
+    "myCourses": "Mening kurslarim",
+    "tasks": "Topshiriqlar",
+    "saved": "Saqlanmalar",
+    "blog": "Blog",
+    "profile": "Shaxsiy kabinet",
+    "survey": "So'rovnoma"
+  },
+  "footer": {
+    "about": "О нас",
+    "feedback": "Обратная связь",
+    "vacancies": "Наши вакансии",
+    "download": "Скачать приложение",
+    "jobseekers": "Соискателям",
+    "createResume": "Создать резюме",
+    "employers": "Работодателям",
+    "postVacancy": "Опубликовать вакансию",
+    "useful": "Полезно",
+    "brand": "Ресурсы бренда",
+    "partners": "Партнерам",
+    "investors": "Инвесторам",
+    "ads": "Реклама на сайте",
+    "calendar": "Календарь"
+  },
+  "course": {
+    "duration": "Davomiylik",
+    "modules": "Mavzular soni",
+    "lessons": "Video darslar",
+    "exams": "Imtihonlar soni",
+    "pcs": "ta",
+    "modulesTitle": "Kurs mavzulari",
+    "tagline": "Savdo san'atini o'rganib, karyerangizni yangi bosqichga olib chiqing",
+    "to": "gacha",
+    "lessonsCount": "ta darsliklar",
+    "modulesCount": "ta mavzular",
+    "examsCount": "ta imtihon",
+    "finalTest": "Yakuniy testga o'tish",
+    "loading": "Yuklanmoqda..."
+  },
+  "lesson": {
+    "attachedFiles": "Biriktirilgan fayllar",
+    "images": "Modulga oid rasmlar",
+    "startTest": "Testni boshlash",
+    "testDesc": "bo'yicha test topshirish",
+    "videoLessons": "Video darslar",
+    "loading": "Yuklanmoqda..."
+  },
+  "test": {
+    "title": "Test",
+    "loading": "Yuklanmoqda...",
+    "questionsCount": "Savollar soni",
+    "timeLimit": "Sinov vaqti",
+    "minutes": "daqiqa",
+    "pcs": "ta",
+    "start": "Testni boshlash",
+    "exit": "Chiqish",
+    "exitConfirm": "Haqiqatan ham chiqmoqchimisiz?",
+    "question": "Savol",
+    "questions": "Savollar",
+    "prev": "Oldingi",
+    "next": "Keyingi",
+    "submit": "Yakunlash",
+    "startError": "Testni boshlashda xatolik",
+    "submitError": "Testni yuborishda xatolik",
+    "answered": "Javob berildi",
+    "skipped": "O'tkazib yuborildi",
+    "notAnswered": "Javob berilmadi",
+    "passed": "Test muvaffaqiyatli topshirildi",
+    "failed": "Test topshirilmadi",
+    "score": "To'g'ri javoblar",
+    "result": {
+      "title": "Test natijasi",
+      "passed": "Tabriklaymiz!",
+      "failed": "Afsuski...",
+      "correct": "to'g'ri javob",
+      "loading": "Natija yuklanmoqda...",
+      "toCourses": "Kurslarga qaytish",
+      "certificate": "Sertifikatni olish"
+    }
+  },
+  "profile": {
+    "user": "Foydalanuvchi",
+    "info": "Ma'lumotlar",
+    "results": "Natijalar",
+    "posts": "Postlar",
+    "firstName": "Ism",
+    "lastName": "Familiya",
+    "email": "Email",
+    "phone": "Telefon",
+    "company": "Kompaniya",
+    "noResults": "Natijalar mavjud emas",
+    "noPosts": "Postlar mavjud emas",
+    "certificate": "Sertifikat",
+    "stats": {
+      "completed": "Tugallangan kurslar",
+      "certificates": "Sertifikatlar",
+      "posts": "Postlar"
+    },
+    "role": {
+      "worker": "Ishchi",
+      "company": "Ish beruvchi"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "create": "Post yaratish",
+    "edit": "Postni tahrirlash",
+    "empty": "Postlar mavjud emas",
+    "notFound": "Post topilmadi",
+    "form": {
+      "title": "Sarlavha",
+      "titlePlaceholder": "Post sarlavhasini kiriting...",
+      "cover": "Muqova rasmi URL",
+      "coverPlaceholder": "https://example.com/image.jpg",
+      "tags": "Teglar",
+      "tagsPlaceholder": "savdo, marketing, karyera",
+      "tagsHint": "Teglarni vergul bilan ajrating",
+      "body": "Matn",
+      "bodyPlaceholder": "Post matnini kiriting..."
+    }
+  },
+  "certificate": {
+    "title": "Sertifikat",
+    "print": "Chop etish",
+    "notFound": "Sertifikat topilmadi",
+    "platform": "Infinity Sales O'quv Platformasi",
+    "this": "Ushbu sertifikat berildi",
+    "completed": "quyidagi kursni muvaffaqiyatli tamomladi:",
+    "director": "Direktor imzosi",
+    "id": "Sertifikat ID"
+  },
+  "notifications": {
+    "title": "Bildirishnomalar",
+    "empty": "Bildirishnomalar mavjud emas",
+    "markAllRead": "Hammasini o'qildi deb belgilash"
+  },
+  "courses": {
+    "empty": "Kurslar mavjud emas"
+  },
+  "common": {
+    "back": "Orqaga",
+    "cancel": "Bekor qilish",
+    "save": "Saqlash",
+    "saving": "Saqlanmoqda...",
+    "error": "Xatolik yuz berdi",
+    "loading": "Yuklanmoqda...",
+    "prev": "Oldingi",
+    "next": "Keyingi"
+  }
+}

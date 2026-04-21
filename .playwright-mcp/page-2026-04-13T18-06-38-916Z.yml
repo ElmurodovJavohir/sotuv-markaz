@@ -1,0 +1,438 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "link" [ref=e9] [cursor=pointer]:
+        - /url: /ru
+        - img "Infinity Sales" [ref=e10]
+      - generic [ref=e12]:
+        - button [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]:
+            - img [ref=e16]
+            - img [ref=e20]
+        - link "link" [ref=e22] [cursor=pointer]:
+          - /url: /ru/worker/login
+          - img [ref=e23]
+          - paragraph [ref=e25]: Войти
+        - link "link" [ref=e26] [cursor=pointer]:
+          - /url: /ru/learn
+          - img [ref=e27]
+          - paragraph [ref=e31]: Learn
+        - link "link" [ref=e32] [cursor=pointer]:
+          - /url: /ru/worker/register
+          - text: Создать резюме
+      - generic [ref=e34]:
+        - link "link" [ref=e35] [cursor=pointer]:
+          - /url: /ru/
+          - img [ref=e37]
+          - text: Поиск работы
+        - link "link" [ref=e40] [cursor=pointer]:
+          - /url: /ru/company
+          - img [ref=e42]
+          - text: Поиск сотрудников
+  - main [ref=e46]:
+    - generic [ref=e560]:
+      - generic [ref=e561]:
+        - generic [ref=e562]:
+          - img "Infinity Sales" [ref=e563]
+          - separator [ref=e564]
+          - heading "Ishga kirish" [level=1] [ref=e565]
+        - generic [ref=e567]:
+          - generic [ref=e568]:
+            - img [ref=e570]
+            - generic [ref=e573]:
+              - paragraph [ref=e574]: "180"
+              - paragraph [ref=e575]: Количество вакансий в системе
+          - generic [ref=e576]:
+            - img [ref=e578]
+            - generic [ref=e583]:
+              - paragraph [ref=e584]: "18"
+              - paragraph [ref=e585]: Зарегистрированные компании
+          - generic [ref=e586]:
+            - img [ref=e588]
+            - generic [ref=e591]:
+              - paragraph [ref=e592]: "0"
+              - paragraph [ref=e593]: Количество опубликованных резюме
+      - generic [ref=e598]:
+        - generic [ref=e599]:
+          - img [ref=e601]
+          - textbox "Например, “Маркетолог”" [ref=e604]
+        - link "link" [ref=e605] [cursor=pointer]:
+          - /url: /worker/advanced-search
+          - img [ref=e606]
+          - text: Фильтр
+        - link "Поиск" [ref=e610] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/?region=46&searchType=1&search
+    - generic [ref=e891]:
+      - generic [ref=e894]:
+        - heading "Отрасли По отраслям" [level=2] [ref=e895]:
+          - generic [ref=e896]: Отрасли
+          - generic [ref=e897]: По отраслям
+        - link "Все отрасли" [ref=e898] [cursor=pointer]:
+          - /url: /ru/worker/category
+          - generic [ref=e899]: Все отрасли
+          - img [ref=e901]
+      - generic [ref=e904]:
+        - link "HR и Управление 0 UZS нет вакансии" [ref=e906] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/category/hr-boshqaruv?category__terms=58
+          - generic [ref=e907]:
+            - heading "HR и Управление" [level=6] [ref=e910]
+            - generic [ref=e911]:
+              - generic [ref=e912]: 0 UZS
+              - paragraph [ref=e913]: нет вакансии
+        - link "ИТ и Программирование 0 UZS нет вакансии" [ref=e915] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/category/it-dasturlash?category__terms=55
+          - generic [ref=e916]:
+            - heading "ИТ и Программирование" [level=6] [ref=e919]
+            - generic [ref=e920]:
+              - generic [ref=e921]: 0 UZS
+              - paragraph [ref=e922]: нет вакансии
+        - link "Логистика 0 UZS нет вакансии" [ref=e924] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/category/logistika?category__terms=59
+          - generic [ref=e925]:
+            - heading "Логистика" [level=6] [ref=e928]
+            - generic [ref=e929]:
+              - generic [ref=e930]: 0 UZS
+              - paragraph [ref=e931]: нет вакансии
+        - link "Продажи и Маркетинг 0 UZS нет вакансии" [ref=e933] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/category/savdo-marketing?category__terms=56
+          - generic [ref=e934]:
+            - heading "Продажи и Маркетинг" [level=6] [ref=e937]
+            - generic [ref=e938]:
+              - generic [ref=e939]: 0 UZS
+              - paragraph [ref=e940]: нет вакансии
+        - link "Финансы и Банк 0 UZS нет вакансии" [ref=e942] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/category/moliya-bank?category__terms=57
+          - generic [ref=e943]:
+            - heading "Финансы и Банк" [level=6] [ref=e946]
+            - generic [ref=e947]:
+              - generic [ref=e948]: 0 UZS
+              - paragraph [ref=e949]: нет вакансии
+    - generic [ref=e612]:
+      - generic [ref=e615]:
+        - heading "Вакансии По компаниям" [level=2] [ref=e616]:
+          - generic [ref=e617]: Вакансии
+          - text: По компаниям
+        - link "Все компании" [ref=e618] [cursor=pointer]:
+          - /url: /ru/worker/company
+          - generic [ref=e619]: Все компании
+          - img [ref=e621]
+      - generic [ref=e623]:
+        - img [ref=e624]
+        - paragraph [ref=e638]: К сожалению, по вашему запросу ничего не найдено
+    - generic [ref=e640]:
+      - generic [ref=e643]:
+        - heading "Недавно добавленные Вакансии" [level=2] [ref=e644]:
+          - generic [ref=e645]: Недавно добавленные
+          - generic [ref=e646]: Вакансии
+        - link "Все вакансии" [ref=e647] [cursor=pointer]:
+          - /url: /ru/worker/vacancy
+          - generic [ref=e648]: Все вакансии
+          - img [ref=e650]
+      - generic [ref=e653]:
+        - link "Hamkorbank Работодатель успешно прошёл верификацию Bank Xodimi link link" [ref=e655] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/bank-xodimi-5
+          - generic [ref=e656]:
+            - generic [ref=e658]:
+              - text: Hamkorbank
+              - img "Работодатель успешно прошёл верификацию" [ref=e659]
+            - heading "Bank Xodimi" [level=6] [ref=e662]
+          - link "link" [ref=e664]:
+            - /url: "#"
+            - generic [ref=e665]: от 4 000 000 до 7 000 000 UZS
+          - link "link" [ref=e666]:
+            - /url: "#"
+            - paragraph [ref=e668]
+        - link "Alif Bank Работодатель успешно прошёл верификацию Backend Dasturchi (Python) link link" [ref=e670] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/backend-dasturchi-python-5
+          - generic [ref=e671]:
+            - generic [ref=e673]:
+              - text: Alif Bank
+              - img "Работодатель успешно прошёл верификацию" [ref=e674]
+            - heading "Backend Dasturchi (Python)" [level=6] [ref=e677]
+          - link "link" [ref=e679]:
+            - /url: "#"
+            - generic [ref=e680]: от 8 000 000 до 18 000 000 UZS
+          - link "link" [ref=e681]:
+            - /url: "#"
+            - paragraph [ref=e683]
+        - link "Kapitalbank Moliyaviy Tahlilchi link link" [ref=e685] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/moliyaviy-tahlilchi-5
+          - generic [ref=e686]:
+            - generic [ref=e688]: Kapitalbank
+            - heading "Moliyaviy Tahlilchi" [level=6] [ref=e689]
+          - link "link" [ref=e691]:
+            - /url: "#"
+            - generic [ref=e692]: от 7 500 000 до 15 000 000 UZS
+          - link "link" [ref=e693]:
+            - /url: "#"
+            - paragraph [ref=e695]
+        - link "Beeline Uzbekistan Работодатель успешно прошёл верификацию Mobil Ilova Dasturchi link link" [ref=e697] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/mobil-ilova-dasturchi-5
+          - generic [ref=e698]:
+            - generic [ref=e700]:
+              - text: Beeline Uzbekistan
+              - img "Работодатель успешно прошёл верификацию" [ref=e701]
+            - heading "Mobil Ilova Dasturchi" [level=6] [ref=e704]
+          - link "link" [ref=e706]:
+            - /url: "#"
+            - generic [ref=e707]: от 9 000 000 до 20 000 000 UZS
+          - link "link" [ref=e708]:
+            - /url: "#"
+            - paragraph [ref=e710]
+        - link "Kapitalbank Xavfsizlik Muhandisi link link" [ref=e712] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/xavfsizlik-muhandisi-5
+          - generic [ref=e713]:
+            - generic [ref=e715]: Kapitalbank
+            - heading "Xavfsizlik Muhandisi" [level=6] [ref=e716]
+          - link "link" [ref=e718]:
+            - /url: "#"
+            - generic [ref=e719]: от 12 000 000 до 25 000 000 UZS
+          - link "link" [ref=e720]:
+            - /url: "#"
+            - paragraph [ref=e722]
+        - link "Uzcard Работодатель успешно прошёл верификацию Kichik Biznes Maslahatchi link link" [ref=e724] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/kichik-biznes-maslahatchi-5
+          - generic [ref=e725]:
+            - generic [ref=e727]:
+              - text: Uzcard
+              - img "Работодатель успешно прошёл верификацию" [ref=e728]
+            - heading "Kichik Biznes Maslahatchi" [level=6] [ref=e731]
+          - link "link" [ref=e733]:
+            - /url: "#"
+            - generic [ref=e734]: от 6 000 000 до 12 000 000 UZS
+          - link "link" [ref=e735]:
+            - /url: "#"
+            - paragraph [ref=e737]
+        - link "Yandex Go Uzbekistan Kredit Portfeli Tahlilchisi link link" [ref=e739] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/kredit-portfeli-tahlilchisi-5
+          - generic [ref=e740]:
+            - generic [ref=e742]: Yandex Go Uzbekistan
+            - heading "Kredit Portfeli Tahlilchisi" [level=6] [ref=e743]
+          - link "link" [ref=e745]:
+            - /url: "#"
+            - generic [ref=e746]: от 7 000 000 до 14 000 000 UZS
+          - link "link" [ref=e747]:
+            - /url: "#"
+            - paragraph [ref=e749]
+        - link "Kapitalbank Mahsulot Menedjeri link link" [ref=e751] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/mahsulot-menedjeri-5
+          - generic [ref=e752]:
+            - generic [ref=e754]: Kapitalbank
+            - heading "Mahsulot Menedjeri" [level=6] [ref=e755]
+          - link "link" [ref=e757]:
+            - /url: "#"
+            - generic [ref=e758]: от 8 000 000 до 16 000 000 UZS
+          - link "link" [ref=e759]:
+            - /url: "#"
+            - paragraph [ref=e761]
+        - link "Yandex Go Uzbekistan Flutter Dasturchi link link" [ref=e763] [cursor=pointer]:
+          - /url: /ru/worker/vacancy/details/flutter-dasturchi-5
+          - generic [ref=e764]:
+            - generic [ref=e766]: Yandex Go Uzbekistan
+            - heading "Flutter Dasturchi" [level=6] [ref=e767]
+          - link "link" [ref=e769]:
+            - /url: "#"
+            - generic [ref=e770]: от 10 000 000 до 20 000 000 UZS
+          - link "link" [ref=e771]:
+            - /url: "#"
+            - paragraph [ref=e773]
+    - generic [ref=e342]:
+      - heading "Загрузив мобильное приложение, ищите работу или сотрудников" [level=3] [ref=e343]
+      - paragraph [ref=e344]: Дополнительное удобство!
+      - paragraph [ref=e346]: Скачайте наши мобильные приложения
+    - generic [ref=e348]:
+      - generic [ref=e349]:
+        - generic [ref=e350]:
+          - heading "Новости" [level=2] [ref=e351]
+          - link "Про профессию" [ref=e352] [cursor=pointer]:
+            - /url: /ru/news
+            - generic [ref=e353]: Про профессию
+            - img [ref=e355]
+        - generic [ref=e952]:
+          - generic [ref=e956]:
+            - paragraph [ref=e957]: IT ta'lim markazlari ko'paymoqda
+            - generic [ref=e958]:
+              - paragraph [ref=e959]: 08.04.2026 | 03:17
+              - link "Подробнее" [ref=e960] [cursor=pointer]:
+                - /url: /ru/news/seed-news-5
+                - paragraph [ref=e961]: Подробнее
+                - img [ref=e962]
+          - generic [ref=e967]:
+            - paragraph [ref=e968]: Yoshlar bandligi dasturi
+            - generic [ref=e969]:
+              - paragraph [ref=e970]: 08.04.2026 | 03:17
+              - link "Подробнее" [ref=e971] [cursor=pointer]:
+                - /url: /ru/news/seed-news-4
+                - paragraph [ref=e972]: Подробнее
+                - img [ref=e973]
+      - generic [ref=e404]:
+        - generic [ref=e405]:
+          - heading "Статьи" [level=2] [ref=e406]
+          - link "Все статьи" [ref=e407] [cursor=pointer]:
+            - /url: /ru/blog
+            - generic [ref=e408]: Все статьи
+            - img [ref=e410]
+        - generic [ref=e977]:
+          - generic [ref=e981]:
+            - paragraph [ref=e982]: Maosh muzokarasini qanday olib borish kerak?
+            - generic [ref=e983]:
+              - paragraph [ref=e984]: 08.04.2026 | 03:17
+              - link "Подробнее" [ref=e985] [cursor=pointer]:
+                - /url: /ru/blog/seed-blog-5
+                - paragraph [ref=e986]: Подробнее
+                - img [ref=e987]
+          - generic [ref=e992]:
+            - paragraph [ref=e993]: Ish beruvchilarni jalb etish sirrlari
+            - generic [ref=e994]:
+              - paragraph [ref=e995]: 08.04.2026 | 03:17
+              - link "Подробнее" [ref=e996] [cursor=pointer]:
+                - /url: /ru/blog/seed-blog-4
+                - paragraph [ref=e997]: Подробнее
+                - img [ref=e998]
+          - generic [ref=e1003]:
+            - paragraph [ref=e1004]: Karyerani qanday rivojlantirish mumkin?
+            - generic [ref=e1005]:
+              - paragraph [ref=e1006]: 08.04.2026 | 03:17
+              - link "Подробнее" [ref=e1007] [cursor=pointer]:
+                - /url: /ru/blog/seed-blog-3
+                - paragraph [ref=e1008]: Подробнее
+                - img [ref=e1009]
+          - generic [ref=e1014]:
+            - paragraph [ref=e1015]: Intervyuga tayyorlanish
+            - generic [ref=e1016]:
+              - paragraph [ref=e1017]: 08.04.2026 | 03:17
+              - link "Подробнее" [ref=e1018] [cursor=pointer]:
+                - /url: /ru/blog/seed-blog-2
+                - paragraph [ref=e1019]: Подробнее
+                - img [ref=e1020]
+      - generic [ref=e459]:
+        - generic [ref=e460]:
+          - heading "Все мероприятии" [level=2] [ref=e461]
+          - link "Мероприятия" [ref=e462] [cursor=pointer]:
+            - /url: /ru/events
+            - generic [ref=e463]: Мероприятия
+            - img [ref=e465]
+        - generic [ref=e1024]:
+          - generic [ref=e1026]:
+            - generic [ref=e1027]:
+              - paragraph [ref=e1028]: "8"
+              - generic [ref=e1029]:
+                - paragraph [ref=e1030]: май
+                - paragraph [ref=e1031]: 03:17
+            - generic [ref=e1033]:
+              - paragraph [ref=e1034]: IT JobFair 2025
+              - generic [ref=e1035]:
+                - paragraph [ref=e1036]: 08.04.2026 | 03:17
+                - link "Подробнее" [ref=e1037] [cursor=pointer]:
+                  - /url: /ru/events/seed-event-1
+                  - paragraph [ref=e1038]: Подробнее
+                  - img [ref=e1039]
+          - generic [ref=e1042]:
+            - generic [ref=e1043]:
+              - paragraph [ref=e1044]: "8"
+              - generic [ref=e1045]:
+                - paragraph [ref=e1046]: май
+                - paragraph [ref=e1047]: 03:17
+            - generic [ref=e1049]:
+              - paragraph [ref=e1050]: Sales Conference Toshkent
+              - generic [ref=e1051]:
+                - paragraph [ref=e1052]: 08.04.2026 | 03:17
+                - link "Подробнее" [ref=e1053] [cursor=pointer]:
+                  - /url: /ru/events/seed-event-2
+                  - paragraph [ref=e1054]: Подробнее
+                  - img [ref=e1055]
+          - generic [ref=e1058]:
+            - generic [ref=e1059]:
+              - paragraph [ref=e1060]: "8"
+              - generic [ref=e1061]:
+                - paragraph [ref=e1062]: май
+                - paragraph [ref=e1063]: 03:17
+            - generic [ref=e1065]:
+              - paragraph [ref=e1066]: HR Forum Uzbekistan
+              - generic [ref=e1067]:
+                - paragraph [ref=e1068]: 08.04.2026 | 03:17
+                - link "Подробнее" [ref=e1069] [cursor=pointer]:
+                  - /url: /ru/events/seed-event-3
+                  - paragraph [ref=e1070]: Подробнее
+                  - img [ref=e1071]
+    - generic [ref=e514]:
+      - generic [ref=e776]:
+        - heading "Отзывы Отзывы пользователей платформы" [level=3] [ref=e781]:
+          - generic [ref=e782]: Отзывы
+          - text: Отзывы пользователей платформы
+        - link "Соискатель asdasdasd" [ref=e789] [cursor=pointer]:
+          - /url: /ru/feedback/1
+          - generic [ref=e790]:
+            - generic [ref=e792]:
+              - paragraph
+              - generic [ref=e793]: Соискатель
+            - img [ref=e794]
+          - paragraph [ref=e798]: asdasdasd
+      - button "Добавить комментарий" [ref=e558] [cursor=pointer]
+  - contentinfo [ref=e799]:
+    - generic [ref=e802]:
+      - generic [ref=e805]:
+        - paragraph [ref=e806]: Infinity Sales Uzbekistan
+        - list [ref=e807]:
+          - listitem
+          - listitem [ref=e808]:
+            - link "Est sit incidunt vitae hic est anim in ut fugiat facilis voluptate dignissimos irure" [ref=e809] [cursor=pointer]:
+              - /url: /ru/Similique%20ex%20voluptas%20in%20ut%20aliquid
+          - listitem
+          - listitem [ref=e810]:
+            - link "link" [ref=e811] [cursor=pointer]:
+              - /url: "#"
+              - text: Обратная связь
+      - generic [ref=e812]:
+        - paragraph [ref=e813]: Соискателям
+        - list [ref=e814]:
+          - listitem
+          - listitem
+          - listitem [ref=e815]:
+            - link "Sunt laudantium odit ut officia labore quos" [ref=e816] [cursor=pointer]:
+              - /url: /ru/Velit%20ut%20id%20quia%20molestiae%20eius%20magnam%20consequuntur%20id%20reprehenderit%20perferendis%20et%20consequuntur%20et%20assumenda%20veniam
+      - generic [ref=e817]:
+        - paragraph [ref=e818]: Работодателям
+        - list [ref=e819]:
+          - listitem [ref=e820]:
+            - link "Commodi aliquam molestiae culpa quam dolorem" [ref=e821] [cursor=pointer]:
+              - /url: /ru/Sequi%20excepteur%20veniam%20dolore%20amet%20nihil%20veritatis%20temporibus%20nisi
+          - listitem
+          - listitem
+      - generic [ref=e822]:
+        - paragraph [ref=e823]: Полезно
+        - list [ref=e824]:
+          - listitem [ref=e825]:
+            - link "Ресурсы бренда" [ref=e826] [cursor=pointer]:
+              - /url: /company-brand
+          - listitem [ref=e827]:
+            - link "Партнерам" [ref=e828] [cursor=pointer]:
+              - /url: /static/partners
+          - listitem [ref=e829]:
+            - link "Инвесторам" [ref=e830] [cursor=pointer]:
+              - /url: /static/investors
+          - listitem [ref=e831]:
+            - link "Реклама на сайте" [ref=e832] [cursor=pointer]:
+              - /url: /static/ads
+          - listitem [ref=e833]:
+            - link "Календарь" [ref=e834] [cursor=pointer]:
+              - /url: /calendar
+    - generic [ref=e837]:
+      - link "link" [ref=e839] [cursor=pointer]:
+        - /url: /ru/worker/home
+        - img "Infinity Sales" [ref=e840]
+      - list [ref=e843]:
+        - listitem [ref=e844]:
+          - link "link" [ref=e845] [cursor=pointer]:
+            - /url: "null"
+            - img "Twitter" [ref=e846]
+            - img "Twitter" [ref=e850]
+        - listitem [ref=e854]:
+          - link "link" [ref=e855] [cursor=pointer]:
+            - /url: "null"
+            - img "Telegram" [ref=e856]
+            - img "Telegram" [ref=e860]
+      - link [ref=e866] [cursor=pointer]:
+        - /url: https://uic.group
+        - img [ref=e867]
+        - img [ref=e881]

@@ -1,0 +1,92 @@
+- generic [ref=e4]:
+  - banner [ref=e6]:
+    - generic [ref=e8]:
+      - link "link" [ref=e10] [cursor=pointer]:
+        - /url: /ru
+        - img "Infinity Sales" [ref=e11]
+      - generic [ref=e13]:
+        - button [ref=e15] [cursor=pointer]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - img [ref=e21]
+        - link "link" [ref=e23] [cursor=pointer]:
+          - /url: /ru/worker/login
+          - img [ref=e24]
+          - paragraph [ref=e26]: Войти
+        - link "link" [ref=e27] [cursor=pointer]:
+          - /url: /ru/worker/register
+          - text: Создать резюме
+      - generic [ref=e29]:
+        - link "link" [ref=e30] [cursor=pointer]:
+          - /url: /ru/
+          - img [ref=e32]
+          - text: Поиск работы
+        - link "link" [ref=e35] [cursor=pointer]:
+          - /url: /ru/company
+          - img [ref=e37]
+          - text: Поиск сотрудников
+  - main [ref=e41]:
+    - generic [ref=e44]:
+      - heading "Новости" [level=1] [ref=e45]
+      - generic [ref=e48]:
+        - generic [ref=e50]:
+          - img [ref=e52]
+          - generic [ref=e53]:
+            - paragraph [ref=e55]: o
+            - paragraph [ref=e57]: 0 | 0
+        - generic [ref=e59]:
+          - img [ref=e61]
+          - generic [ref=e62]:
+            - paragraph [ref=e64]: o
+            - paragraph [ref=e66]: 0 | 0
+        - generic [ref=e68]:
+          - img [ref=e70]
+          - generic [ref=e71]:
+            - paragraph [ref=e73]: o
+            - paragraph [ref=e75]: 0 | 0
+        - generic [ref=e77]:
+          - img [ref=e79]
+          - generic [ref=e80]:
+            - paragraph [ref=e82]: o
+            - paragraph [ref=e84]: 0 | 0
+        - generic [ref=e86]:
+          - img [ref=e88]
+          - generic [ref=e89]:
+            - paragraph [ref=e91]: o
+            - paragraph [ref=e93]: 0 | 0
+        - generic [ref=e95]:
+          - img [ref=e97]
+          - generic [ref=e98]:
+            - paragraph [ref=e100]: o
+            - paragraph [ref=e102]: 0 | 0
+        - generic [ref=e104]:
+          - img [ref=e106]
+          - generic [ref=e107]:
+            - paragraph [ref=e109]: o
+            - paragraph [ref=e111]: 0 | 0
+        - generic [ref=e113]:
+          - img [ref=e115]
+          - generic [ref=e116]:
+            - paragraph [ref=e118]: o
+            - paragraph [ref=e120]: 0 | 0
+        - generic [ref=e122]:
+          - img [ref=e124]
+          - generic [ref=e125]:
+            - paragraph [ref=e127]: o
+            - paragraph [ref=e129]: 0 | 0
+        - generic [ref=e131]:
+          - img [ref=e133]
+          - generic [ref=e134]:
+            - paragraph [ref=e136]: o
+            - paragraph [ref=e138]: 0 | 0
+        - generic [ref=e140]:
+          - img [ref=e142]
+          - generic [ref=e143]:
+            - paragraph [ref=e145]: o
+            - paragraph [ref=e147]: 0 | 0
+        - generic [ref=e149]:
+          - img [ref=e151]
+          - generic [ref=e152]:
+            - paragraph [ref=e154]: o
+            - paragraph [ref=e156]: 0 | 0
+  - contentinfo

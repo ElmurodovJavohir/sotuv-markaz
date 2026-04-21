@@ -1,0 +1,240 @@
+// Global utility classes
+.wb {
+  word-break: break-word;
+}
+
+.color-dark {
+  color: $dark-blue !important;
+}
+
+.color-blue {
+  color: $blue-learning !important;
+}
+
+.bg-section {
+  background-color: $bg-section;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// Button system (shared with infinitysales-frontend)
+.i-btn {
+  @include adaptiv(font-size, 14, 13);
+  @include adaptiv(padding-right, 20, 12);
+  @include adaptiv(padding-left, 20, 12);
+
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0;
+  max-height: 44px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  // Learning platform primary button
+  &_blue,
+  &_primary {
+    @include adaptiv(padding-top, 10, 8);
+    @include adaptiv(padding-bottom, 10, 8);
+
+    color: $white;
+    background: $blue-learning;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $white;
+      background: darken(#268ae7, 8%);
+      transition: all 0.2s;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      background: rgba(38, 138, 231, 0.5);
+    }
+  }
+
+  // Ghost / outline button
+  &_outline,
+  &_grey {
+    @include adaptiv(padding-top, 10, 8);
+    @include adaptiv(padding-bottom, 10, 8);
+
+    color: $dark-learning;
+    background: #edf1f5;
+    transition: all 0.2s;
+
+    &:hover {
+      background: darken(#edf1f5, 5%);
+      transition: all 0.2s;
+    }
+  }
+
+  &_white {
+    @include adaptiv(padding-top, 10, 8);
+    @include adaptiv(padding-bottom, 10, 8);
+
+    color: $dark-learning;
+    background: $white;
+    border: 1px solid $divider;
+    transition: all 0.3s;
+  }
+
+  &_green {
+    @include adaptiv(padding-top, 10, 8);
+    @include adaptiv(padding-bottom, 10, 8);
+
+    color: $white !important;
+    background: $green;
+    transition: all 0.3s;
+
+    &:hover {
+      background: rgba(0, 167, 149, 0.85);
+    }
+  }
+}
+
+// Form styles
+.i-form {
+  &__group {
+    @include adaptiv(gap, 8, 6);
+    @include adaptiv(margin-bottom, 20, 12);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__label {
+    @include adaptiv(font-size, 13, 12);
+
+    font-weight: 600;
+    line-height: 130%;
+    color: $grey;
+  }
+
+  &__inp {
+    @include adaptiv(height, 44, 36);
+    @include adaptiv(padding-right, 16, 10);
+    @include adaptiv(padding-left, 16, 10);
+    @include adaptiv(font-size, 14, 13);
+
+    background: $bg-section;
+    border: 1px solid $divider;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 400;
+    color: $dark-learning;
+    line-height: 120%;
+    transition: all 0.2s;
+
+    &::placeholder {
+      color: rgba(103, 113, 122, 0.6);
+    }
+
+    &:focus {
+      border-color: $blue-learning;
+    }
+
+    &._error {
+      border-color: $red;
+    }
+  }
+}
+
+// Learning-specific card
+.l-card {
+  background: $white;
+  border: 1px solid $divider;
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.02);
+}
+
+// Sidebar layout
+.l-layout {
+  display: grid;
+  grid-template-columns: 264px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 82px - 48px);
+  padding-top: 48px;
+
+  &__sidebar {
+    padding: 16px 0 32px;
+    position: sticky;
+    top: 82px;
+    height: fit-content;
+  }
+
+  &__content {
+    padding: 16px 76px 48px 32px;
+  }
+}
+
+// Breadcrumb
+.l-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__item {
+    font-size: 13px;
+    font-weight: 500;
+    color: $dark-learning;
+    line-height: 1.25;
+
+    &--active {
+      color: $grey-learning;
+    }
+  }
+
+  &__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: $grey-learning;
+    flex-shrink: 0;
+  }
+}
+
+// Course info badge
+.course-badge {
+  background: rgba(0, 107, 203, 0.04);
+  border: 1px solid rgba(0, 107, 203, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: $grey;
+    font-weight: 400;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__value {
+    font-size: 12px;
+    font-weight: 600;
+    color: $dark-blue;
+  }
+}

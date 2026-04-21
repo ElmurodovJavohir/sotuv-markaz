@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(yarn --version)",
+      "mcp__figma__get_metadata",
+      "Bash(python3:*)",
+      "Bash(node:*)",
+      "mcp__figma__get_design_context",
+      "mcp__figma__use_figma",
+      "mcp__figma__get_screenshot",
+      "Bash(python manage.py migrate common 0206 --fake)",
+      "Bash(python:*)",
+      "Bash(docker compose:*)",
+      "Bash(docker info:*)",
+      "Bash(curl -s http://localhost:8001/api/v1/learning/courses/)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\" http://localhost:8001/api/v1/learning/courses/)",
+      "Bash(curl -s http://localhost:9200/_cluster/health)",
+      "Bash(docker system df:*)",
+      "Bash(xargs wc:*)",
+      "Bash(netsh int:*)",
+      "Bash(netstat -ano)",
+      "Bash(findstr \"LISTEN\")",
+      "Bash(sed -n '228,245p' /c/Users/user/Code/Work/jobhunt/infinitysales-backend/src/common/models.py)",
+      "Bash(sed -n '570,585p' /c/Users/user/Code/Work/jobhunt/infinitysales-backend/src/common/models.py)",
+      "Bash(sed -n '338,350p' /c/Users/user/Code/Work/jobhunt/infinitysales-backend/src/company/models.py)",
+      "Bash(sed -n '253,265p' /c/Users/user/Code/Work/jobhunt/infinitysales-backend/src/worker/models.py)",
+      "Bash(ls -la /c/Users/user/Code/Work/jobhunt/infinitysales-backend/src/*/models.py)",
+      "Bash(npm install:*)",
+      "Bash(curl:*)",
+      "Bash(npx playwright:*)",
+      "Bash(py -3 fix_footer.py)",
+      "Bash(py:*)",
+      "Bash(identify \"C:/Users/user/Code/Work/jobhunt/infinitysales-frontend/static/img/logo-blue.svg\")",
+      "Bash(cmd.exe /c \"netsh interface ipv4 show excludedportrange protocol=tcp\")",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(yarn build:*)",
+      "Bash(grep:*)",
+      "Bash(npx husky *)",
+      "Bash(echo \"yarn lint-staged\")"
+    ]
+  },
+  "outputStyle": "default",
+  "mcpServers": {
+    "figma": {
+      "command": "figma-developer-mcp",
+      "args": [
+        "--stdio"
+      ]
+    }
+  }
+}
