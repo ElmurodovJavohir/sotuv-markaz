@@ -1,0 +1,6 @@
+[submodule "sotuv-markaz-frontend"]
+	path = sotuv-markaz-frontend
+	url = https://github.com/ElmurodovJavohir/sotuv-markaz-frontend.git
+[submodule "sotuv-markaz-backend"]
+	path = sotuv-markaz-backend
+	url = https://github.com/ElmurodovJavohir/sotuv-markaz-backend.git

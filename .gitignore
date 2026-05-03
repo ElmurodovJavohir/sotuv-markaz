@@ -1,0 +1,27 @@
+# Per-user / IDE
+.claude/settings.local.json
+.claude/worktrees/
+.claude/agents/
+.migration-review/
+.playwright-mcp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Build artifacts (safety net)
+node_modules/
+__pycache__/
+*.pyc
+.nuxt/
+.env
+
+# Temp scripts
+capture-*.js
+
+# No remote yet — skip until repo is set up
+sotuv-markaz-learning/
