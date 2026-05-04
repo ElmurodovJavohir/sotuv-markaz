@@ -5,34 +5,44 @@
 ## BUG-BE-001: `/api/v1/common/catgory/with-salary` typo
 
 **Severity:** Medium
-**Status:** Ochiq
-**Topilgan:** 2026-04 (frontend API audit)
+**Status:** Yopildi (commit 622e26a, 2026-05-04)
 
 URL da `category` o'rniga `catgory` yozilgan. Endpoint 301 redirect qaytaradi — har bir frontend call ga 200-500ms latency qo'shadi.
 
-**Fix:** URL pattern ni to'g'rilash + backward compat uchun eski URL da permanent redirect qo'yish.
+**Fix bajarildi:** `/category/with-salary/` to'g'ri URL bilan ishlaydi. Eski `/catgory/with-salary/` `RedirectView` orqali permanent (301) redirect qaytaradi.
 
 ---
 
 ## BUG-BE-002: Skills endpoint performance
 
 **Severity:** Medium
-**Status:** Ochiq
+**Status:** Yopildi (commit 878de03, 2026-05-05)
 
 `/api/v1/common/skills/?search=<query>` ba'zan 2+ soniya javob bermaydi (PEND).
 `search=undefined` yuborilganda (frontend bug) — butun filtrsiz natija qaytadi.
 
-**Fix:** `"undefined"` string ni bo'sh search sifatida treat qilish. Index qo'shish.
+**Fix bajarildi:**
+- `src/helpers/functions.py::normalize_search()` helper qo'shildi — `undefined`/`null`/`none`/`nan`/whitespace ni bo'sh search sifatida treat qiladi.
+- 6 view fayl ichida 10 search call site ushbu helper bilan o'rab olindi (worker skills, tags, kategoriya search, kompaniya/vacancy header search, wishlist va h.k.).
+- `WorkerSkills.title` ustida trigram GIN index allaqachon mavjud (migration `0209_workerskills_trigram_index`).
 
 ---
 
 ## BUG-BE-003: Category select endpoint
 
-**Severity:** Medium
-**Status:** Ochiq
+**Severity:** Low
+**Status:** Tekshirildi — kod sog'lom, prod cache ni tekshirish kerak
 
 `/api/v1/common/category/select/` ba'zan PEND.
-Ehtimoliy sabab: N+1 query yoki missing index.
+
+**Tekshiruv natijasi (2026-05-05):**
+- Lokal profilingdagi haqiqiy holat: 39 parent + 3 daraja child uchun atigi **2 query**, jami **16-22ms** DB+serialization (`prefetch_related` to'g'ri ishlaydi).
+- HTTP wall-time ~400ms — bu middleware (auth, debug toolbar, language detection) tufayli, query xarajati emas.
+- Lokal `USE_CACHE=False` bo'lgani uchun `cache_page()` no-op. Prod-da `USE_CACHE=True` da cache hit darhol qaytadi.
+
+**Asosiy ishonchli sabab "PEND" hodisalari uchun:** prod cache miss yoki cache backend (Redis) bilan tarmoq muammolari. Kod tarafida tuzatish kerak emas.
+
+**Tavsiya:** prod-da APM (Sentry Performance) bilan p95 latency va cache hit-rate ni kuzatish.
 
 ---
 
@@ -45,3 +55,21 @@ Ehtimoliy sabab: N+1 query yoki missing index.
 Boshqa app larda ham testlar yo'q yoki minimal.
 
 AI kod o'zgartirganida natijani tekshira olmaydi.
+
+
+---
+
+## BUG-BE-005: Seed company avatars are placeholder text-on-color PNGs
+
+**Severity:** Low (cosmetic — affects only dev/seed environment)
+**Status:** Ochiq
+
+`seed_test_data.py` generates `cdn/avatars/test_company_<id>.png` as 512×512 PNGs containing only a solid color square with the company name rendered as text in the center (e.g. yellow square with "Ucell" written on it).
+
+Frontend code already pulls `item.avatar_url` correctly via `<img>` (same pattern as `CompanyServiceCard.vue` `item.image_url` and blog posts), but the rendered result looks text-styled rather than like a real branded logo because the source PNG itself contains text.
+
+Per Figma node 2129:48730 the design expects real branded company logos (Texnomart yellow with star icon, TBC Bank teal with mark, Saber Group abstract logo, Korzinka shopping cart, etc.).
+
+**Fix on backend:** either bundle real logo PNGs in the seed data fixtures, or rewrite the placeholder generator to draw a generic icon (building/briefcase silhouette) instead of company-name text.
+
+**Frontend:** already correct, no change needed.
