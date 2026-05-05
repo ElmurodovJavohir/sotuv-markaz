@@ -1,0 +1,73 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "agent": {
+        "build": {
+            "mode": "primary",
+            "description": "Default agent. Executes tasks, delegates parallel work to subagents.",
+            "permission": {
+                "read": "allow",
+                "edit": "allow",
+                "glob": "allow",
+                "grep": "allow",
+                "list": "allow",
+                "bash": {
+                    "*": "ask",
+                    "cat *": "allow",
+                    "head *": "allow",
+                    "tail *": "allow",
+                    "wc *": "allow",
+                    "find *": "allow",
+                    "grep *": "allow",
+                    "ls *": "allow",
+                    "jq *": "allow",
+                    "node -e *": "allow",
+                    "python *": "allow",
+                    "git diff*": "allow",
+                    "git log*": "allow",
+                    "git status*": "allow",
+                    "git branch*": "allow",
+                    "git show*": "allow",
+                    "git push*": "deny",
+                    "git reset --hard*": "deny"
+                },
+                "task": "allow",
+                "webfetch": "allow",
+                "websearch": "allow"
+            }
+        },
+        "plan": {
+            "mode": "primary",
+            "description": "Read-only analysis and planning. Never modifies files.",
+            "model": "opencode/kimi-k2.6",
+            "permission": {
+                "read": "allow",
+                "edit": "deny",
+                "glob": "allow",
+                "grep": "allow",
+                "list": "allow",
+                "bash": {
+                    "*": "deny",
+                    "cat *": "allow",
+                    "head *": "allow",
+                    "find *": "allow",
+                    "grep *": "allow",
+                    "ls *": "allow",
+                    "git diff*": "allow",
+                    "git log*": "allow",
+                    "git status*": "allow"
+                },
+                "task": "allow"
+            }
+        }
+    },
+    "mcp": {
+        "figma": {
+            "type": "remote",
+            "url": "http://127.0.0.1:3845/mcp",
+            "enabled": true
+        }
+    },
+    "permission": {
+        "external_directory": "ask"
+    }
+}

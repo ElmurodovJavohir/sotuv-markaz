@@ -134,13 +134,43 @@ Do NOT create/modify Notion tasks unless Javokhir explicitly asks.
 - Candidate profile page (DISC/PAEI charts)
 
 ---
+## 7. AGENT SYSTEM — OpenCode
 
-## 7. AGENT SYSTEM (`.claude/agents/`)
+OpenCode runs as MCP tool (`opencode-mcp`) with 3 subagents on Kimi K2.6.
+Claude Code delegates bulk work to OpenCode, reviews results, applies changes.
 
-Three specialist agent instruction files exist from prior Windsurf sessions:
-- `fe-pages-agent.md` — page-level Vue files
-- `fe-components-agent.md` — reusable components
-- `fe-styles-agent.md` — global SCSS
+### Subagents
+- **@worker** — Executes tasks: edits files, generates code, runs commands
+- **@explorer** — Read-only: greps, searches, traces dependencies
+- **@reviewer** — Read-only: audits code quality, compares against specs
 
-These can be used as reference for Claude Code sub-agents or RAGFlow agents.
-They contain detailed scope boundaries, quality gates, and workflow patterns.
+### Delegation commands
+- `opencode_fire` — non-blocking, parallel (returns sessionId)
+- `opencode_run` — blocking, wait for result
+- `opencode_ask` — quick one-shot question
+- `opencode_check` — poll status of fired task
+
+### When to delegate
+- Bulk file scanning (50+ files)
+- Figma cache / token extraction
+- Color / i18n audits across codebase
+- Documentation generation from code
+- Repetitive scaffolding (tests, serializers, specs)
+- Any task: large input, small judgment
+
+### When to keep in Claude Code
+- Figma spec interpretation
+- CSS override decisions requiring component context
+- Cross-repo dependency analysis
+- Anything touching `<script>` blocks or Vuex
+
+### Pattern
+1. Fire tasks to OpenCode (parallel when possible)
+2. Continue own work or fire more
+3. Collect results via `opencode_check`
+4. Validate before applying to codebase
+
+### Config location
+- `AGENTS.md` — OpenCode system prompt (project root)
+- `opencode.json` — OpenCode config (project root)
+- `.opencode/agents/` — subagent definitions (worker, explorer, reviewer)

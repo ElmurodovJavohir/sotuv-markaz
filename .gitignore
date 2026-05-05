@@ -1,7 +1,7 @@
 # Per-user / IDE
 .claude/settings.local.json
 .claude/worktrees/
-.claude/agents/
+.claude/
 .migration-review/
 .playwright-mcp/
 
@@ -25,3 +25,5 @@ capture-*.js
 
 # No remote yet — skip until repo is set up
 sotuv-markaz-learning/
+
+figma_cache/

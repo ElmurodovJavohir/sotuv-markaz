@@ -73,3 +73,20 @@ Per Figma node 2129:48730 the design expects real branded company logos (Texnoma
 **Fix on backend:** either bundle real logo PNGs in the seed data fixtures, or rewrite the placeholder generator to draw a generic icon (building/briefcase silhouette) instead of company-name text.
 
 **Frontend:** already correct, no change needed.
+
+---
+
+## BUG-BE-006: `/api/v1/common/feedback/` endpoint missing
+
+**Severity:** High (footer "Обратная связь" modal cannot submit)
+**Status:** Yopildi (2026-05-06) — `Feedback` model + `FeedbackCreateView` (AllowAny) + URL route added in `src/common/`, migration `0211_feedback`. Verified: `POST /api/v1/common/feedback/` → 201.
+
+`Footer.vue::netvorkForm()` POSTs `name`, `phone`, `text` to `/api/v1/common/feedback/`.
+
+- Browser network tab: `OPTIONS /api/v1/common/feedback/` → 200 (CORS preflight passes), `POST` → 404 Not Found, Django renders "Page not found" (URLconf has no matching pattern).
+- Confirmed: `src/common/urls.py` has no `feedback/` route, and there is no `Feedback` model/view/serializer anywhere in `src/common/`.
+- Both worker (`#netvork`) and company (`#netvork_g`) feedback variants hit the same endpoint, so both modals are broken.
+
+**Fix on backend:** add `Feedback` model (name, phone, text, created_at), `FeedbackCreateView` (POST only, AllowAny), and `path("feedback/", ...)` in `src/common/urls.py`. Optional: forward to admin email or Telegram bot on save.
+
+**Frontend:** already correct after [components/Footer.vue:320](sotuv-markaz-frontend/components/Footer.vue:320) was changed from `/api/v1/common/feedback/` to `/common/feedback/` (axios baseURL prepends `/api/v1`).
