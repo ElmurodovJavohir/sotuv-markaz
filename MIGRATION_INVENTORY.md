@@ -3,7 +3,7 @@
 ## Infinity Sales Frontend — Nuxt 2 / Vue 2 Legacy Codebase
 
 Generated: 2026-04-19
-Project Root: /infinitysales-frontend/
+Project Root: /sotuv-markaz-frontend/
 Tech Stack: Nuxt 2 SPA, Vue 2, SCSS, Bootstrap Vue, Element UI, Tailwind CSS 2.2
 
 ---

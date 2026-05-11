@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+migrations/
+*.log
+*.lock
+dist/
+build/
+.git/
+.next/
+coverage/
+.pytest_cache/
+*.egg-info/
+.opencode/

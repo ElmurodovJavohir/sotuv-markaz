@@ -11,7 +11,7 @@
                 "grep": "allow",
                 "list": "allow",
                 "bash": {
-                    "*": "ask",
+                    "*": "allow",
                     "cat *": "allow",
                     "head *": "allow",
                     "tail *": "allow",

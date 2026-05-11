@@ -25,5 +25,5 @@ Platforma dastlab "Infinity Sales" nomi bilan ishlab chiqilgan. Bozor (O'zbekist
 
 ## Oqibat
 
-- Codebase da repo nomlari hali `infinitysales-*` — o'zgartirish katta refactor, hozircha qoladi
+- Codebase da repo nomlari hali `sotuv-markaz-*` — o'zgartirish katta refactor, hozircha qoladi
 - Internal kod da `infinity` reference lari muammo qilmaydi — bu faqat user-facing nom

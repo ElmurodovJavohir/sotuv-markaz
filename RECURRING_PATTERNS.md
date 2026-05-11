@@ -17,6 +17,7 @@
 | `$blue-light` | `#29b2ff` | CTA gradient end |
 | `$blue-link` | `#268ae7` | Links, active states, focus |
 | `$green` | `#00a795` | Success / company brand |
+| `$green-light` | `#76c773` | Available/active toggle state (register wizard) — lighter than `$green`, intentional |
 | `$red` | `#fb2828` | Error |
 | `$warning` | `#ffb547` | Warning amber |
 | `$border-card` | `#eef2f9` | Card borders |
@@ -397,7 +398,7 @@
 Before committing any visual change, run through this list. Every item is grep-able or visually testable.
 
 ### Tokens & Colors
-- [ ] No hex literal in `.vue` `<style>` matches a value in the canonical token table (`grep -rnE "(color|background|background-color|border|fill|stroke):\s*#(19192d|001444|f5f7f9|768194|0085ff|29b2ff|268ae7|00a795|fb2828|ffb547|eef2f9|e2e5ea|edf1f5|e8e8e8|e9eff7)" components` returns zero in changed files).
+- [ ] No hex literal in `.vue` `<style>` matches a value in the canonical token table (`grep -rnE "(color|background|background-color|border|fill|stroke):\s*#(19192d|001444|f5f7f9|768194|0085ff|29b2ff|268ae7|00a795|76c773|fb2828|ffb547|eef2f9|e2e5ea|edf1f5|e8e8e8|e9eff7)" components` returns zero in changed files).
 - [ ] `$blue` only used in CTA gradients; `$blue-link` for every link, focus, active form border.
 - [ ] CTA gradient = `linear-gradient(213.7deg, #29b2ff 0%, #0085ff 100%)` exactly.
 - [ ] No `--foo:` CSS custom property declarations in `components/` (`grep -rnE "^\s*--[a-z]" components` returns 0).
@@ -674,3 +675,95 @@ Findings from a 2026-05-04 PM session covering: login button (Header `.btn-login
 
 #### Image
 - [ ] **IM4** Logo/avatar `<img>` falls back to `/img/noava1.svg`, never to CSS-rendered text initial.
+
+## P25: Layout strategy (block-first, absolute as last resort)
+
+Figma uses absolute positioning everywhere because designers work that way.
+The frontend must NOT mirror this. Order of preference:
+1. Flexbox (90% of cases)
+2. CSS Grid (galleries, tables, complex layouts)
+3. Block + margin (simple stacking)
+4. position: absolute — ONLY when 1–3 cannot achieve the layout
+
+When you encounter `position: absolute` in Figma export:
+- Re-derive the layout using flex/grid first
+- Use absolute only for: tooltips, dropdowns, badges-on-images, decorative overlays
+
+## P26: Exact spacing — never approximate
+
+Spacing values from Figma must be exact, not rounded.
+- Header button gap: read Figma value, apply exact px (e.g. 12px not "around 12px")
+- Card internal padding: exact px on each side
+- Stack gap: exact px
+
+If Figma shows two buttons with 12px between them, the CSS is exactly:
+gap: 12px (or margin-right: 12px on the first one)
+
+Round only when Figma value is fractional (e.g. 11.5px → 12px).
+Never round whole numbers (12px → 16px to "match the scale" is WRONG).
+
+The spacing scale (4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80) is a guideline
+for new design — for migration, follow Figma exactly.
+
+## P27: Icon assets — download from Figma
+
+Icons that cannot be replicated as code (multi-color, complex paths, brand
+glyphs) must be downloaded from Figma and committed to static/img/icons/.
+
+Workflow:
+1. get_design_context returns the icon as image export (CDN URL)
+2. Download the SVG/PNG to static/img/icons/{descriptive-name}.svg
+3. Replace the inline SVG in the Vue file with <img src="/static/img/icons/...">
+4. Commit the asset file alongside the Vue change
+
+CDN URLs expire in 7 days — download immediately, do not link.
+
+Icons that CAN be replicated as code:
+- Single-color outline icons → use stroke="currentColor"
+- Standard shapes (chevron, plus, x, search) → inline SVG with current pattern
+
+## P28: Script and backend changes — size-gated
+
+Small script changes (allowed without asking):
+- Adding a class binding (e.g. :class="{ active: isActive }")
+- Renaming a CSS class reference in template
+- Toggling an existing flag/prop
+- Adding a missing v-if/v-show wrapper for layout
+- Importing an existing component
+
+Big script changes (STOP and ask Javokhir):
+- New computed property or watcher
+- New Vuex action/mutation
+- New API call
+- Refactoring component lifecycle
+- Adding new props or emits
+- Logic in mounted/created/destroyed
+
+Small backend changes (allowed without asking):
+- Adding a missing field to an existing serializer
+- Updating a string value in seed data
+- Adding a missing translation key
+
+Big backend changes (STOP and ask Javokhir):
+- New model or migration
+- New endpoint
+- Permission/auth changes
+- Database schema changes
+- Anything touching multiple apps
+
+Log every script/backend change to SCRIPT_CHANGES.md or BACKEND_CHANGES.md.
+
+---
+
+# ADDENDUM 3 — 2026-05-08 (worker-profile audit session)
+
+## C1 — New instances in `pages/worker/account/main.vue`
+- Lines 482/489: `stroke="#268ae7"` on "+" add-social button SVG — fixed to `stroke="currentColor"`
+- Lines 665/666: `fill="#268ae7"` + `stroke="#268ae7"` on pen/edit icon in phone-change modal — fixed to `fill="currentColor"` + `stroke="currentColor"`
+- Pattern: C1 violations appear in modal SVGs that were written independently from the main template. Modal SVG icons are a recurring blind spot for the grep sweeps because they're deeply nested.
+
+## P29: Verify Figma node mapping before starting audit
+- **What happens:** `page-list.json` entry points to wrong code file. `worker-profile → 2129:52692` maps to "General informations" (account settings form) but queue entry listed `pages/worker/profile/index.vue` (resume editor). The correct file is `pages/worker/account/main.vue`.
+- **Where found:** 2026-05-08, worker-profile audit. Discovered because Figma screenshot showed Ф.И.О./Пол/Регион form while code had О себе/Опыт sections.
+- **Universal fix rule:** At STEP_1 of every page audit, confirm the Figma frame name and compare it to the page's actual visible title in the browser. If they don't match, check sibling pages before proceeding. Update `page-list.json` if the mapping is wrong.
+- **Check command:** Compare `Figma frame name` vs `<h1>` text in code. If mismatch, search for the correct code file via `grep -rl "$frame_title_key" pages/`.

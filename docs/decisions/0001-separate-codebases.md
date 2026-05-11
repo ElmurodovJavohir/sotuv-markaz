@@ -11,9 +11,9 @@ Platformada ikkita asosiy product bor: Job Marketplace va Sales Training. Ularni
 ## Qaror
 
 Alohida codebase, shared SSO orqali bog'liq:
-- `infinitysales-frontend/` — Job Marketplace (Nuxt 2, port 3004)
-- `infinitysales-learning/` — Sales Training + SalesIQ (port 3005)
-- `infinitysales-backend/` — umumiy backend (Django + FastAPI)
+- `sotuv-markaz-frontend/` — Job Marketplace (Nuxt 2, port 3004)
+- `sotuv-markaz-learning/` — Sales Training + SalesIQ (port 3005)
+- `sotuv-markaz-backend/` — umumiy backend (Django + FastAPI)
 
 ## Sabab
 

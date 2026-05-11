@@ -27,3 +27,6 @@ capture-*.js
 sotuv-markaz-learning/
 
 figma_cache/
+
+# Session archives
+_archive/

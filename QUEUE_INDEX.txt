@@ -1,0 +1,218 @@
+================================================================================
+VISUAL FIX QUEUE — FILE INDEX & NAVIGATION
+================================================================================
+
+SESSION STATUS: Queue Initialized (Session 2 Complete)
+NEXT ACTION: Start Batch 1 (Pages 1-30) in next session
+PROGRESS: 1/87 pages complete (1.15%)
+
+================================================================================
+ESSENTIAL FILES (READ IN THIS ORDER)
+================================================================================
+
+1. README_VISUAL_QUEUE.md
+   Location: sotuv-markaz/
+   What: Complete roadmap with quick start guide
+   Read Time: 5 min
+   Purpose: Overview of entire queue, batches, skip list
+
+2. VISUAL_QUEUE_ANALYSIS.md
+   Location: sotuv-markaz/
+   What: Technical guide with violation patterns and token reference
+   Read Time: 10 min
+   Purpose: How to identify and fix each violation type (S4, C1, P1)
+
+3. SESSION_2_SUMMARY.md
+   Location: sotuv-markaz/
+   What: What was done in this session, current state
+   Read Time: 5 min
+   Purpose: Session recap and findings
+
+================================================================================
+QUEUE STATE & TRACKING
+================================================================================
+
+.visual-agent/queue-state.json
+   Current page: worker-login (page index 1)
+   Pages done: 1 (home)
+   Pages remaining: 86
+   Last updated: 2026-05-08T06:00:00Z
+
+.visual-agent/page-list.json
+   All 97 pages with Figma node IDs and metadata
+   Use to identify page files to process
+
+.visual-agent/BLOCKERS.md
+   Violation summary and processing constraints
+   Skip list, affected files, token mappings
+
+================================================================================
+VIOLATION STATISTICS
+================================================================================
+
+S4 (Tailwind arbitrary brackets): 36 instances
+   Pattern: bg-[#hex], gap-[Npx], rounded-[Npx]
+   Files: ~30 pages
+   Priority: HIGH
+
+C1 (hardcoded hex in styles): 68 instances
+   Pattern: color: #19192d;, background: #fff;
+   Files: ~20 pages
+   Priority: MEDIUM
+
+P1 (::v-deep in scoped): 4 instances
+   Pattern: <style scoped> with ::v-deep
+   Files: 4 pages
+   Priority: LOW
+
+IM1 (@error handlers): ALREADY FIXED
+   Added: 133 handlers to 62 files
+   Status: COMPLETE
+
+TOTAL: 108 violations across ~50 files
+
+================================================================================
+AUDIT FILES (OUTPUT)
+================================================================================
+
+Location: sotuv-markaz/audits/
+
+Files created:
+- home-FINAL.md (Session 2)
+
+Format: {page-slug}-FINAL.md
+Example: worker-register-FINAL.md, company-category-FINAL.md
+
+Each audit contains:
+- Status (DONE, PARTIAL, BLOCKED)
+- Page info (Vue file, Figma node)
+- Fixes applied (S4, C1, P1, other)
+- Remaining issues
+- Files modified
+
+================================================================================
+SCSS TOKEN REFERENCE
+================================================================================
+
+From CLAUDE.md — Use in C1 fixes:
+
+#19192d → $dark-blue          (primary text, dark bg)
+#0085ff → $blue               (CTA buttons)
+#268ae7 → $blue-link          (links, active tabs)
+#29b2ff → $blue-light         (gradient start)
+#768194 → $grey               (secondary text)
+#f5f7f9 → $bg-section         (section backgrounds)
+#eef2f9 → $border-card        (card borders)
+#e8e8e8 → $border-color       (general borders)
+#fb2828 → $red                (errors)
+#00a795 → $green              (success)
+#ffb547 → $amber              (premium badges)
+#e2e5ea → $border-light       (light borders)
+#edf1f5 → $border-divider     (dividers)
+#e9eff7 → $btn-secondary      (secondary button bg)
+
+Location: sotuv-markaz-frontend/_variables.scss
+
+================================================================================
+PAGES TO PROCESS (87 TOTAL)
+================================================================================
+
+Batch 1: Pages 0-30   (45 min est.)  — HIGH violation density
+Batch 2: Pages 31-65  (45 min est.)  — MEDIUM violation density
+Batch 3: Pages 66-97  (30 min est.)  — LOW violation density
+
+Pages to SKIP (10 total):
+- worker-staff, company-payment, company-faq-index/slug/questions
+- email-verify, events-slug, feedback-slug, news-slug, temp
+
+Current position: Page 0 (home — DONE), resume from page 1 (worker-login)
+
+================================================================================
+NEXT SESSION STEPS
+================================================================================
+
+1. Read README_VISUAL_QUEUE.md (quick start)
+2. Check queue-state.json for resume point
+3. Process pages 1-30:
+   - Grep for S4/C1/P1 violations
+   - Apply fixes (move to SCSS, replace hex with tokens)
+   - Write audit file
+   - Update queue-state.json
+
+4. Commit every 10 pages:
+   Example: "docs: visual queue batch 1 audit (pages 0-10)"
+
+5. Update progress in queue-state.json
+
+================================================================================
+IMPORTANT CONSTRAINTS
+================================================================================
+
+DO NOT MODIFY:
+- Header.vue (maintained by Javokhir)
+- store/, plugins/, middleware/, api/
+- package.json, nuxt.config.js
+- _fonts.scss, _functions.scss
+
+MUST USE:
+- Vue 2 syntax (no :deep(), use ::v-deep with non-scoped)
+- SCSS tokens from CLAUDE.md (no CSS variables)
+- Scoped styles for component rules
+- @error handlers already added (IM1 complete)
+
+NO git push — Javokhir handles deployments
+NO yarn build — Reserved for session end
+
+================================================================================
+FIGMA CACHE
+================================================================================
+
+Location: sotuv-markaz/figma_cache/pages/{slug}/
+
+Pre-cached for reference (read-only):
+- guest-home/ (home page)
+- soiskatel/ (worker section)
+- rabotodatel/ (company section)
+
+Cache is informational only — focus on Vue file violations
+
+================================================================================
+CONTACT & NOTES
+================================================================================
+
+Project Lead: Javokhir Elmurodov
+Timezone: Riga/Latvia (+03:00)
+Git Remote: github (NOT origin)
+
+Session 1: Pattern inventory + P1 fix + IM1 bulk fix
+Session 2: Queue initialization + violation discovery (THIS SESSION)
+Session 3+: Batch fixes (pages 1-97)
+
+================================================================================
+QUICK COMMANDS
+================================================================================
+
+Find S4 violations:
+  grep -r "bg-\[#\|gap-\[\|rounded-\[" pages --include="*.vue"
+
+Find C1 violations:
+  grep -r "color:\s*#\|background:\s*#" pages --include="*.vue"
+
+Find P1 violations:
+  grep -r "::v-deep\|:deep(" pages --include="*.vue"
+
+List pages with violations:
+  grep -r "bg-\[#\|gap-\[\|color:\s*#" pages --include="*.vue" -l | sort
+
+================================================================================
+STATUS: Ready for Next Session
+================================================================================
+
+✅ Queue initialized
+✅ Violations scanned and categorized
+✅ Processing plan established
+✅ Documentation complete
+✅ Audit framework ready
+
+→ Proceed to README_VISUAL_QUEUE.md for detailed instructions
+→ Next session: Start Batch 1 (Pages 1-30)

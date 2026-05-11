@@ -6,9 +6,9 @@
 
 | Product | Tavsif | Port | Repo |
 |---------|--------|------|------|
-| Job Marketplace | Kompaniyalar va sales mutaxassislarni bog'lash | 3004 | `infinitysales-frontend/` |
-| Sales Training + SalesIQ | E-learning + AI assessment | 3005 | `infinitysales-learning/` |
-| Backend API | Django REST + FastAPI | 8000 / 8001 | `infinitysales-backend/` |
+| Job Marketplace | Kompaniyalar va sales mutaxassislarni bog'lash | 3004 | `sotuv-markaz-frontend/` |
+| Sales Training + SalesIQ | E-learning + AI assessment | 3005 | `sotuv-markaz-learning/` |
+| Backend API | Django REST + FastAPI | 8000 / 8001 | `sotuv-markaz-backend/` |
 
 Ikkala frontend **alohida codebase**, lekin shared SSO va unified user profile orqali bog'liq.
 

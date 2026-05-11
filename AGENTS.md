@@ -2,13 +2,13 @@
 
 You are working on Sotuv Markaz (sotuv-markaz.uz) — AI-powered recruitment and sales training platform for Uzbekistan/CIS.
 
-Tech Lead: Javokhir. Designer: Malika Xakimova.
+Tech Lead: Javokhir
 
 ---
 
 ## Projects
 
-**Frontend** — `infinitysales-frontend/`
+**Frontend** — `sotuv-markaz-frontend/`
 - Nuxt 2 SPA, Vue 2, SCSS, Bootstrap Vue, Element UI
 - i18n: Russian (default) + Uzbek via `nuxt-i18n`
 - Auth: `@nuxtjs/auth-next` (dual: worker + company)
@@ -17,7 +17,7 @@ Tech Lead: Javokhir. Designer: Malika Xakimova.
 - Dev: `http://localhost:3004` (`yarn dev`)
 - Prod branch: `fresh_master`
 
-**Backend** — `infinitysales-backend/`
+**Backend** — `sotuv-markaz-backend/`
 - Django 4.x + DRF + PostgreSQL
 - i18n: `modeltranslation` for bilingual DB fields (ru/uz)
 - AI: Claude API for SalesIQ scoring

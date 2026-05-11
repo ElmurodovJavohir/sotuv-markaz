@@ -1,0 +1,132 @@
+{
+  "page": "home",
+  "figma_node": "2129:48704",
+  "route": "/ru/",
+  "vue_file": "pages/index.vue",
+  "cached_at": "2026-05-08T09:35:00Z",
+  "source": "figma_cache/pages/guest-home/ (all 8 sections)",
+  "sections": [
+    {
+      "index": 1,
+      "name": "Hero / Search",
+      "figma_node": "2129:49041",
+      "vue_impl": "components/sections/MainSection.vue",
+      "components": [
+        "hero-background",
+        "nav-capsule (header — scope-excluded)",
+        "hero-logo",
+        "hero-tagline (h1)",
+        "stats-bar (3 items: vacancies, companies, resumes)",
+        "search-bar (MainSearch component)",
+        "role-switcher",
+        "language-selector",
+        "login-button",
+        "learn-button",
+        "create-resume-cta",
+        "search-input",
+        "search-button (gradient)",
+        "filter-button"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Commercial Offers",
+      "figma_node": "7060:58342",
+      "vue_impl": "components/sections/CommercialOffers.vue + components/cards/CompanyServiceCard.vue",
+      "components": [
+        "section-title",
+        "section-subtitle",
+        "view-all-link (chevron arrow)",
+        "card-grid (4 cards)",
+        "service-card (image + logo + company-name + service-title)"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Vacancies by Industry",
+      "figma_node": "2129:48706",
+      "vue_impl": "components/sections/VacanciesByIndustry.vue",
+      "components": [
+        "section-title",
+        "section-subtitle",
+        "view-all-link",
+        "card-grid (12 cards, 3 rows × 4 cols)",
+        "category-card (icon-box + category-name + salary + vacancy-count)"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Vacancies by Company",
+      "figma_node": "2129:48730",
+      "vue_impl": "components/sections/VacanciesByCompany.vue",
+      "components": [
+        "section-title",
+        "section-subtitle",
+        "view-all-link (color: $grey per C8)",
+        "company-card (image + company-name + verified-badge + vacancy-count)",
+        "carousel-nav-right (44×44, radius 8px, 1.6px $bg-section border)",
+        "carousel-nav-left"
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Latest Vacancies",
+      "figma_node": "2129:48748",
+      "vue_impl": "components/sections/LatestVacancies.vue + components/cards/VacancyHomeCard.vue",
+      "components": [
+        "section-title",
+        "section-subtitle",
+        "view-all-link",
+        "card-grid (9 cards, 3 cols × 3 rows)",
+        "vacancy-card (logo + company-name + job-title + divider + salary + location)",
+        "premium-variant (amber border + star-ribbon)",
+        "argent-variant (amber border only)",
+        "bookmark (WishList component)"
+      ]
+    },
+    {
+      "index": 6,
+      "name": "App Download",
+      "figma_node": "2129:48865",
+      "vue_impl": "components/sections/DownloadingMobileApp.vue (COMMENTED OUT in index.vue)",
+      "status": "COMMENTED_OUT",
+      "components": [
+        "section-title",
+        "section-subtitle",
+        "cta-banner (gradient #29b2ff→#0085ff)",
+        "iphone-mockup (overhangs top 44px)",
+        "qr-code",
+        "app-store-button",
+        "google-play-button"
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Blog / News",
+      "figma_node": "2129:48928",
+      "vue_impl": "components/sections/NewsSection.vue",
+      "components": [
+        "section-title",
+        "section-subtitle",
+        "view-all-link",
+        "card-grid (4 cards, 4 cols)",
+        "blog-card (image-overhang + title + date-chip + category-chip)",
+        "category-chip (bg #e8f6ff / color #189fff — Figma-specified unified)"
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Testimonials",
+      "figma_node": "2129:48997",
+      "vue_impl": "components/sections/OpinionSection.vue",
+      "components": [
+        "section-title",
+        "section-subtitle",
+        "testimonial-card × 3 (avatar + company + author-role + quote-text)",
+        "quote-icon",
+        "carousel-nav-right (44×44, radius 8px)",
+        "carousel-nav-left"
+      ]
+    }
+  ]
+}

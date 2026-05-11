@@ -1,0 +1,9 @@
+{
+  "last_heartbeat": "2026-05-08T10:48:00Z",
+  "current_page": "worker-profile",
+  "current_step": "STEP_10",
+  "current_substep": "complete",
+  "next_action": "session complete — worker-profile PARTIAL (88%)",
+  "files_modified_this_page": ["pages/worker/account/main.vue"],
+  "session_id": "session-2026-05-08-2"
+}
