@@ -767,3 +767,302 @@ Log every script/backend change to SCRIPT_CHANGES.md or BACKEND_CHANGES.md.
 - **Where found:** 2026-05-08, worker-profile audit. Discovered because Figma screenshot showed Ф.И.О./Пол/Регион form while code had О себе/Опыт sections.
 - **Universal fix rule:** At STEP_1 of every page audit, confirm the Figma frame name and compare it to the page's actual visible title in the browser. If they don't match, check sibling pages before proceeding. Update `page-list.json` if the mapping is wrong.
 - **Check command:** Compare `Figma frame name` vs `<h1>` text in code. If mismatch, search for the correct code file via `grep -rl "$frame_title_key" pages/`.
+
+---
+
+## P30: Spacing — Figma Annotation Mandatory
+
+**Symptom:** Agent writes "approximately 24px gap" but Figma specifies exact `28px` or `32px`. Agent visually estimates instead of reading exact values from Figma JSON.
+
+**Root cause:** `get_design_context` MCP response includes precise spacing values for every node. Agent ignores these and rounds to "design system standards" or visually approximates.
+
+**Detection rule:**
+Every px value in modified SCSS must have a Figma source comment in this format:
+
+```scss
+padding-top: 80px;        // figma 2129:48704 paddingTop
+padding-left: 64px;       // figma 2129:48704 paddingLeft
+gap: 32px;                // figma 2129:48704 itemSpacing
+max-width: 1242px;        // figma 2129:48700 absoluteBoundingBox.width
+```
+
+If any px value lacks the source comment, it's a P30 violation.
+
+**Pre-fix workflow (mandatory):**
+
+Before changing any spacing property:
+
+1. Read `figma_cache/{node-id}.json` for the element
+2. Find the element's layout properties:
+   - `paddingTop`, `paddingRight`, `paddingBottom`, `paddingLeft`
+   - `itemSpacing` (flex/auto-layout gap)
+   - `layoutMode` (HORIZONTAL/VERTICAL/NONE)
+   - `absoluteBoundingBox.width` and `.height`
+   - `minWidth`, `maxWidth`
+3. Use the EXACT value from Figma — no rounding
+4. Add source comment with node ID and property name
+
+**Forbidden practices:**
+- `padding: 2rem` when Figma shows `32px` — must use px
+- Rounding `28px` to `24px` or `32px` to fit a "scale"
+- Rounding `1242px` to `1200px` for "Bootstrap container"
+- Comments like "approximately", "looks like", "standard scale", "8-grid"
+- Using `gap: 1.5rem` when Figma says `gap: 24px`
+- Tailwind classes for arbitrary spacing when Figma is specific (e.g. `px-4` for `padding: 13px`)
+
+**Validation grep:**
+
+```bash
+# Find px values without source comments (potential violations)
+grep -rEn '(padding|margin|gap|width|height|top|left|right|bottom):\s*\d+px' \
+  assets/scss pages components --include="*.scss" --include="*.vue" \
+  | grep -v 'figma\|//' \
+  | head -20
+```
+
+Each match needs a Figma source comment, be reverted, or use a canonical SCSS token.
+
+**Action when Figma value not found:**
+- DO NOT make the change
+- Log to `BLOCKERS.md`: "Element `{selector}` on page `{name}` — Figma layout property `{prop}` not in cache"
+- Continue with other fixes
+
+**Exception — canonical tokens:**
+Values defined in `_variables.scss` don't need per-use comments. Examples:
+- `$container-max-width` (if defined)
+- `$border-radius` (canonical 8px)
+- `$gutter` (canonical grid gutter)
+
+Only ad-hoc px values need source comments.
+
+---
+
+## P31: Typography — Figma Text Styles Mandatory
+
+**Symptom:** Agent writes `font-size: 2rem; font-weight: bold; line-height: 1.25` but Figma specifies exact `32px / 700 / 40px`.
+
+**Root cause:** Figma text nodes contain a `style` object with exact `fontSize`, `fontWeight` (numeric), `lineHeightPx`, `letterSpacing`, and `fontFamily`. Agent converts to rem, uses keyword weights, or guesses ratios.
+
+**Detection rule:**
+
+Every text element CSS must have:
+- `font-size` in **px** (not rem, not em, not keywords)
+- `font-weight` as **number** (400, 500, 600, 700, 800)
+- `line-height` in **px** (not decimal ratios like 1.25, 1.5)
+- Source comment for non-tokenized values
+
+**Pre-fix workflow (mandatory):**
+
+Before changing any typography property:
+
+1. Read `figma_cache/{node-id}.json` for the text node
+2. Find its `style` object:
+```json
+   {
+     "fontFamily": "Inter",
+     "fontSize": 32,
+     "fontWeight": 700,
+     "lineHeightPx": 40,
+     "lineHeightPercent": 125,
+     "letterSpacing": -0.64,
+     "textCase": "ORIGINAL",
+     "textAlignHorizontal": "LEFT"
+   }
+```
+3. If `lineHeightPx` present: use directly. If only `lineHeightPercent`: convert: `lineHeight = fontSize * (percent / 100)`
+4. Write CSS with source comment
+
+**Format example:**
+
+```scss
+// GOOD — exact values with source
+h1.page-title {
+  font-size: 32px;             // figma 2129:48710 fontSize
+  font-weight: 700;            // figma 2129:48710 fontWeight
+  line-height: 40px;           // figma 2129:48710 lineHeightPx
+  letter-spacing: -0.02em;     // figma 2129:48710 letterSpacing
+  color: $dark-blue;           // canonical token
+}
+
+// BAD — rem, keyword, decimal
+h1.page-title {
+  font-size: 2rem;             // rem instead of px
+  font-weight: bold;           // keyword instead of number
+  line-height: 1.25;           // decimal instead of px
+}
+```
+
+**Forbidden:**
+- `font-weight: bold | normal | lighter | bolder` — must be numeric
+- `font-size: 1.5rem | 1.5em` — must be px
+- `line-height: 1.5 | normal | inherit` — must be px (from Figma)
+- `font-size: small | medium | large | xl` — must be px
+
+**Validation greps:**
+
+```bash
+# Non-px font-size
+grep -rEn 'font-size:\s*[\d.]+(rem|em)\b' \
+  assets/scss pages components --include="*.scss" --include="*.vue"
+
+# Non-numeric font-weight
+grep -rEn 'font-weight:\s*(bold|normal|lighter|bolder)\b' \
+  assets/scss pages components --include="*.scss" --include="*.vue"
+
+# Decimal line-height
+grep -rEn 'line-height:\s*[\d.]+(?!px)\s*[;}]' \
+  assets/scss pages components --include="*.scss" --include="*.vue"
+```
+
+Any match is a violation. Convert to px/numeric.
+
+**Tailwind exception:**
+Tailwind classes like `text-xl`, `font-bold`, `leading-tight` may be used IF they map exactly to Figma values. Verify Tailwind config:
+- `text-xl` = `1.25rem` = `20px` — only use if Figma says `fontSize: 20`
+- `font-bold` = `700` — only use if Figma says `fontWeight: 700`
+- `leading-tight` = `1.25` — only use if Figma `lineHeightPx == fontSize * 1.25`
+
+Otherwise use raw `style="font-size: 32px"` with source comment.
+
+---
+
+## P32: Width / Max-Width — Figma Exact, No Rounding
+
+**Symptom:** Figma frame width is `1242px` but code uses `1200px`, `max-w-7xl` (1280px), or `100%`. Container widths get rounded to "standard" sizes.
+
+**Root cause:** Figma frames have exact pixel widths from designer. Agent rounds to nearest Tailwind container size, Bootstrap breakpoint, or "design system standard." This breaks alignment with Figma's annotated padding values.
+
+**Hard rule:**
+
+For top-level page containers:
+- Read Figma frame's `absoluteBoundingBox.width`
+- Use exact value — no rounding to 1200/1280/1320
+- Account for Figma's horizontal padding: 
+  - `width: 1242px` + `paddingLeft: 64 + paddingRight: 64`
+  - Content area = `1242 - 128 = 1114px`
+
+For section/component widths:
+- Same rule — read from Figma `width`
+- Fixed-width sidebar: `width: 270px` (Figma sidebar width)
+- Fixed-width forms, modals, cards: from Figma
+
+**Format:**
+
+```scss
+// GOOD
+.main-container {
+  max-width: 1242px;          // figma frame 2129:48700 absoluteBoundingBox.width
+  padding: 0 64px;            // figma frame 2129:48700 paddingLeft/paddingRight
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 270px;               // figma sidebar 2129:50100 absoluteBoundingBox.width
+  flex-shrink: 0;
+}
+
+// Or in SCSS variables for reuse
+$container-max-width: 1242px;       // figma main frame
+$container-padding-x: 64px;
+$sidebar-width: 270px;              // figma sidebar
+```
+
+**Forbidden:**
+- `max-width: 1200px` when Figma says `1242px`
+- `max-width: 1280px` ("Tailwind max-w-7xl")
+- `max-width: 1140px` ("Bootstrap container")
+- `width: 100%` for elements Figma shows with fixed width
+- Hardcoding 1140/1200/1280/1320 without checking Figma
+
+**Exception — truly fluid sections:**
+If a section explicitly uses Figma `layoutMode: HORIZONTAL` with `layoutSizingHorizontal: FILL`, it should be `width: 100%`. Read the property, don't assume.
+
+---
+
+## P33: Border, Radius, Shadow — Figma Exact Values
+
+**Symptom:** Cards rendered with `border-radius: 8px` when Figma specifies `12px` or `16px`. Shadows estimated visually instead of read from Figma `effects` array.
+
+**Root cause:** Agent uses canonical 8px radius everywhere, ignores Figma's per-element `cornerRadius` and `effects`.
+
+**Hard rule:**
+
+Every `border-radius`, `border`, `box-shadow`:
+- Read from Figma node's `cornerRadius`, `strokes`, `effects`
+- Use exact value
+- Add source comment
+
+**Format:**
+
+```scss
+.card {
+  border-radius: 12px;                       // figma 2129:50300 cornerRadius
+  border: 1px solid $border-color;           // figma 2129:50300 strokes[0]
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);  // figma 2129:50300 effects[0]
+}
+
+.modal {
+  border-radius: 16px;                       // figma 2129:50400 cornerRadius
+}
+
+.button-primary {
+  border-radius: 8px;                        // figma 2129:51000 cornerRadius
+  border: none;                              // figma 2129:51000 strokes empty
+}
+```
+
+**Figma effects mapping:**
+
+| Figma effect type | CSS property |
+|-------------------|--------------|
+| `DROP_SHADOW` | `box-shadow` (offset.x, offset.y, radius, spread, color) |
+| `INNER_SHADOW` | `box-shadow: inset ...` |
+| `LAYER_BLUR` | `filter: blur(Xpx)` |
+| `BACKGROUND_BLUR` | `backdrop-filter: blur(Xpx)` |
+
+Extract these from each effect object:
+- `offset.x`, `offset.y` → first two box-shadow values
+- `radius` → blur radius (third value)
+- `spread` → spread radius (fourth value)
+- `color` → shadow color (convert from `{r,g,b,a}` to `rgba()`)
+
+**Border radius corner variations:**
+
+If Figma has different corners (e.g. card with rounded top only):
+```scss
+.card {
+  border-top-left-radius: 12px;     // figma 2129:50300 rectangleCornerRadii[0]
+  border-top-right-radius: 12px;    // figma 2129:50300 rectangleCornerRadii[1]
+  border-bottom-right-radius: 0;    // figma 2129:50300 rectangleCornerRadii[2]
+  border-bottom-left-radius: 0;     // figma 2129:50300 rectangleCornerRadii[3]
+}
+```
+
+Read `rectangleCornerRadii` array for per-corner values.
+
+---
+
+## Updates to existing patterns
+
+### P26 — Superseded by P30
+Old P26 said "exact spacing, no rounding." P30 is stricter — adds the source-comment requirement. P26 still applies in spirit, P30 enforces it mechanically.
+
+### P14 — Refined
+Tokens remain preferred for canonical colors. P30/P31 add: for non-token values (spacing, typography), Figma source comment is mandatory.
+
+### P25 — Still applies
+Layout strategy "block-first" (flex/grid over absolute) still applies. Spacing values within flex/grid must follow P30.
+
+---
+
+## Summary — what these 4 patterns enforce
+
+| Pattern | Enforces | Failure mode prevented |
+|---------|----------|----------------------|
+| P30 | Spacing source comment | "Approximately 24px" estimation |
+| P31 | Typography in px/numeric | rem/keyword/decimal conversions |
+| P32 | Container width exact | Rounding 1242 → 1200 |
+| P33 | Border/radius/shadow exact | Universal "8px corners everywhere" |
+
+**Core idea:** Comments force honesty. If agent writes `padding: 60px; // figma paddingLeft = 64`, the comment exposes the lie. Agent can't round without leaving evidence.
+

@@ -1,6 +1,10 @@
 {
-  "queue_started_at": "2026-05-08T09:20:00Z",
-  "last_session_ended_at": null,
+  "schema": "v3",
+  "started_at": "2026-05-14T17:44:00Z",
+  "last_session_ended_at": "2026-05-14T19:05:00Z",
+  "session_id": "analyzer-fixer-20260514-2",
+  "total_pages": 84,
+  "reset_reason": "SCANNED pages were surface-level only; re-running with full component traversal + Phase A-H fixes",
   "pages": [
     {
       "name": "home",
@@ -8,29 +12,15 @@
       "route": "/ru/",
       "figma_node": "2129:48704",
       "auth_required": false,
-      "status": "PARTIAL",
-      "current_step": "STEP_10",
-      "structural_score": 90,
-      "started_at": "2026-05-08T09:20:30Z",
-      "completed_at": "2026-05-08T09:50:00Z",
-      "audits": [
-        "audits/home-structural.md",
-        "audits/home-style-diff.md",
-        "audits/home-FINAL.md"
-      ],
-      "blockers": [
-        "App Download section commented out — uncomment when mobile app published"
-      ],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ],
-      "files_modified": [
-        "languages/ru.js",
-        "languages/uz.js",
-        "components/sections/OpinionSection.vue",
-        "components/sections/NewsSection.vue"
-      ]
+      "status": "NOT_RUN",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-login",
@@ -38,21 +28,15 @@
       "route": "/ru/worker/login",
       "figma_node": "2129:49123",
       "auth_required": false,
-      "status": "DONE",
-      "current_step": "STEP_10",
-      "structural_score": 97,
-      "started_at": "2026-05-08T09:51:00Z",
-      "completed_at": "2026-05-08T09:55:00Z",
-      "audits": [
-        "sotuv-markaz-frontend/audits/worker-login-structural.md"
-      ],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ],
-      "notes": "Actual implementation in pages/login/index.vue (pages/worker/login.vue is a redirect stub). Social login section hidden v-if=false per open design question #4. C1 non-tokens (#ff4e4e, #1e7dd4) are Figma-correct but untokenizable — left with inline comments.",
-      "files_modified": []
+      "status": "NOT_RUN",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-register",
@@ -60,17 +44,15 @@
       "route": "/ru/worker/register",
       "figma_node": "2129:49252",
       "auth_required": false,
-      "status": "RUNNING",
-      "current_step": "STEP_0",
-      "structural_score": null,
-      "started_at": "2026-05-08T09:56:00Z",
+      "status": "NOT_RUN",
+      "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-home",
@@ -79,16 +61,14 @@
       "figma_node": "2129:49415",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-search",
@@ -97,16 +77,14 @@
       "figma_node": "2129:49893",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-vacancy",
@@ -115,16 +93,14 @@
       "figma_node": "2129:58545",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-vacancy-details",
@@ -133,34 +109,30 @@
       "figma_node": "2129:58892",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-profile",
       "path": "pages/worker/profile/index.vue",
       "route": "/ru/worker/profile",
-      "figma_node": "2129:52692",
+      "figma_node": "2129:56453",
       "auth_required": true,
-      "status": "RUNNING",
-      "current_step": "STEP_1",
-      "structural_score": null,
-      "started_at": "2026-05-08T10:20:00Z",
+      "status": "NOT_RUN",
+      "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-create-resume",
@@ -169,16 +141,14 @@
       "figma_node": "2129:60445",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-company",
@@ -187,16 +157,14 @@
       "figma_node": "2129:60304",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-desk-application",
@@ -205,16 +173,14 @@
       "figma_node": "2129:52756",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-desk-saved",
@@ -223,16 +189,14 @@
       "figma_node": "2129:52779",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-desk-interview",
@@ -241,16 +205,14 @@
       "figma_node": "2129:53434",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-category",
@@ -259,16 +221,14 @@
       "figma_node": "2129:61325",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "news",
@@ -277,16 +237,14 @@
       "figma_node": "2129:59214",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-faq",
@@ -295,16 +253,14 @@
       "figma_node": "2129:54894",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-home",
@@ -313,16 +269,14 @@
       "figma_node": "2129:50446",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-vacancy-add",
@@ -331,16 +285,14 @@
       "figma_node": "2129:60835",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-candidates",
@@ -349,16 +301,14 @@
       "figma_node": "2129:52839",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-top-vacancy",
@@ -367,16 +317,14 @@
       "figma_node": "2129:52676",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-desk-suggestions",
@@ -385,16 +333,14 @@
       "figma_node": "2129:52839",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-faq-message",
@@ -403,16 +349,14 @@
       "figma_node": "2129:54923",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-my-resume-id",
@@ -421,16 +365,14 @@
       "figma_node": "2129:57369",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-vacancy-slug",
@@ -439,16 +381,14 @@
       "figma_node": "2129:58892",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-vacancy-category",
@@ -457,16 +397,14 @@
       "figma_node": "2129:58545",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-company-slug",
@@ -475,16 +413,14 @@
       "figma_node": "2129:60304",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-advanced-search",
@@ -493,16 +429,14 @@
       "figma_node": "2129:49893",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "calendar",
@@ -511,16 +445,14 @@
       "figma_node": "2129:53544",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-brand",
@@ -529,16 +461,14 @@
       "figma_node": "2129:54399",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "static-slug",
@@ -547,16 +477,14 @@
       "figma_node": "2129:54500",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "blog-index",
@@ -565,16 +493,14 @@
       "figma_node": "2129:59214",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "blog-id",
@@ -583,16 +509,14 @@
       "figma_node": "2129:60251",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "events-index",
@@ -601,16 +525,14 @@
       "figma_node": "2129:59214",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "register-index",
@@ -619,16 +541,14 @@
       "figma_node": "2129:49252",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-index",
@@ -637,16 +557,14 @@
       "figma_node": "2129:50446",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-login",
@@ -655,16 +573,14 @@
       "figma_node": "2129:49123",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-register",
@@ -673,16 +589,14 @@
       "figma_node": "2129:49252",
       "auth_required": false,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-advanced-search",
@@ -691,16 +605,14 @@
       "figma_node": "2129:50787",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-candidate-id",
@@ -709,16 +621,14 @@
       "figma_node": "2129:60304",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-desk-application",
@@ -727,16 +637,14 @@
       "figma_node": "2129:52756",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-desk-interview",
@@ -745,16 +653,14 @@
       "figma_node": "2129:53434",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-desk-saved",
@@ -763,16 +669,14 @@
       "figma_node": "2129:52779",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-faq-message",
@@ -781,16 +685,14 @@
       "figma_node": "2129:54923",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-account-main",
@@ -799,16 +701,14 @@
       "figma_node": "2129:56453",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-account-notifications",
@@ -817,16 +717,14 @@
       "figma_node": "2129:56375",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-account-password",
@@ -835,16 +733,14 @@
       "figma_node": "2129:56360",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-password",
@@ -853,16 +749,14 @@
       "figma_node": "2129:56360",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-subscribe",
@@ -871,16 +765,14 @@
       "figma_node": "2129:54943",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-services-index",
@@ -889,16 +781,14 @@
       "figma_node": "2129:56268",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-services-id",
@@ -907,16 +797,14 @@
       "figma_node": "2129:56268",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-buy-service-index",
@@ -925,16 +813,14 @@
       "figma_node": "2129:56268",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-buy-service-history",
@@ -943,16 +829,14 @@
       "figma_node": "2129:56268",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-profile-application",
@@ -961,16 +845,14 @@
       "figma_node": "2129:56453",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-my-resume-index",
@@ -979,16 +861,14 @@
       "figma_node": "2129:54957",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-faq-slug",
@@ -997,16 +877,14 @@
       "figma_node": "2129:54894",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-faq-questions",
@@ -1015,16 +893,14 @@
       "figma_node": "2129:54894",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-vacancy-details-index",
@@ -1033,16 +909,14 @@
       "figma_node": "2129:58892",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "worker-vacancy-our-vacancies",
@@ -1051,16 +925,14 @@
       "figma_node": "2129:58545",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-account-main",
@@ -1069,16 +941,14 @@
       "figma_node": "2129:126415",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-account-notifications",
@@ -1087,16 +957,14 @@
       "figma_node": "2129:126600",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-account-password",
@@ -1105,16 +973,14 @@
       "figma_node": "2129:126587",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-password",
@@ -1123,16 +989,14 @@
       "figma_node": "2129:126587",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-profile-index",
@@ -1141,16 +1005,14 @@
       "figma_node": "2129:126785",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-profile-application",
@@ -1159,16 +1021,14 @@
       "figma_node": "2129:128714",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-category",
@@ -1177,16 +1037,14 @@
       "figma_node": "2129:126305",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-desk-suggestions-index",
@@ -1195,16 +1053,14 @@
       "figma_node": "2129:128425",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-desk-suggestions-slug",
@@ -1213,16 +1069,14 @@
       "figma_node": "2129:128425",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-vacancy-slug",
@@ -1231,16 +1085,14 @@
       "figma_node": "2129:129851",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-vacancy-edit-id",
@@ -1249,16 +1101,14 @@
       "figma_node": "2129:129504",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-index",
@@ -1267,16 +1117,14 @@
       "figma_node": "2129:121982",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-status",
@@ -1285,16 +1133,14 @@
       "figma_node": "2129:121982",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-bought-pocket",
@@ -1303,16 +1149,14 @@
       "figma_node": "2129:121982",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-package-services",
@@ -1321,16 +1165,14 @@
       "figma_node": "2129:122464",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-purchase-history",
@@ -1339,16 +1181,14 @@
       "figma_node": "2129:122128",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-multi-profile-index",
@@ -1357,16 +1197,14 @@
       "figma_node": "2129:126992",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-multi-profile-create",
@@ -1375,16 +1213,14 @@
       "figma_node": "2129:126992",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "company-tarif-multi-profile-edit",
@@ -1393,116 +1229,14 @@
       "figma_node": "2129:126992",
       "auth_required": true,
       "status": "NOT_RUN",
-      "current_step": null,
-      "structural_score": null,
       "started_at": null,
       "completed_at": null,
-      "audits": [],
-      "blockers": [],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
-    },
-    {
-      "name": "worker-staff",
-      "path": "pages/worker/staff.vue",
-      "route": "/ru/worker/staff",
-      "figma_node": null,
-      "auth_required": true,
-      "status": "SKIPPED",
-      "current_step": null,
-      "structural_score": null,
-      "started_at": null,
-      "completed_at": null,
-      "audits": [],
-      "blockers": [
-        "figma_node: null — legacy page, no design"
-      ],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
-    },
-    {
-      "name": "company-payment",
-      "path": "pages/company/payment.vue",
-      "route": "/ru/company/payment",
-      "figma_node": null,
-      "auth_required": true,
-      "status": "SKIPPED",
-      "current_step": null,
-      "structural_score": null,
-      "started_at": null,
-      "completed_at": null,
-      "audits": [],
-      "blockers": [
-        "figma_node: null — custom payment flow, no design"
-      ],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
-    },
-    {
-      "name": "company-faq-index",
-      "path": "pages/company/faq/index.vue",
-      "route": "/ru/company/faq",
-      "figma_node": null,
-      "auth_required": true,
-      "status": "SKIPPED",
-      "current_step": null,
-      "structural_score": null,
-      "started_at": null,
-      "completed_at": null,
-      "audits": [],
-      "blockers": [
-        "figma_node: null — no FAQ frame in company Figma section"
-      ],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
-    },
-    {
-      "name": "email-verify",
-      "path": "pages/email/verify.vue",
-      "route": "/ru/email/verify",
-      "figma_node": null,
-      "auth_required": false,
-      "status": "SKIPPED",
-      "current_step": null,
-      "structural_score": null,
-      "started_at": null,
-      "completed_at": null,
-      "audits": [],
-      "blockers": [
-        "figma_node: null — utility page"
-      ],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
-    },
-    {
-      "name": "temp",
-      "path": "pages/temp.vue",
-      "route": "/ru/temp",
-      "figma_node": null,
-      "auth_required": false,
-      "status": "SKIPPED",
-      "current_step": null,
-      "structural_score": null,
-      "started_at": null,
-      "completed_at": null,
-      "audits": [],
-      "blockers": [
-        "figma_node: null — dev page"
-      ],
-      "scope_excluded": [
-        "header",
-        "footer"
-      ]
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "about-us",
@@ -1510,9 +1244,16 @@
       "route": "/ru/about",
       "figma_node": "2129:54518",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "About Us"
+      "status": "ERRORED",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null,
+      "error": "File not found in codebase"
     },
     {
       "name": "brand-resources",
@@ -1520,19 +1261,15 @@
       "route": "/ru/company-brand",
       "figma_node": "2129:54399",
       "auth_required": false,
-      "status": "needs-create-or-verify",
-      "skip": false,
-      "frame_name": "Brand resources"
-    },
-    {
-      "name": "static-slug",
-      "path": "pages/static/_slug.vue",
-      "route": "/ru/static/test",
-      "figma_node": "2129:54500",
-      "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "Static page"
+      "status": "NOT_RUN",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "error-500",
@@ -1540,10 +1277,15 @@
       "route": "(error layout — 500 state)",
       "figma_node": "2129:63238",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "500 error",
-      "implementation_note": "Implement via Nuxt error layout, switch on statusCode"
+      "status": "NOT_RUN",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "error-404",
@@ -1551,10 +1293,15 @@
       "route": "(error layout — 404 state)",
       "figma_node": "2129:62679",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "404 error",
-      "implementation_note": "Implement via Nuxt error layout, switch on statusCode"
+      "status": "NOT_RUN",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "partners",
@@ -1562,9 +1309,16 @@
       "route": "/ru/partners",
       "figma_node": "2129:54819",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "Partners"
+      "status": "ERRORED",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null,
+      "error": "File not found in codebase"
     },
     {
       "name": "investors",
@@ -1572,9 +1326,16 @@
       "route": "/ru/investors",
       "figma_node": "2129:54844",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "Investors"
+      "status": "ERRORED",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null,
+      "error": "File not found in codebase"
     },
     {
       "name": "ads-on-site",
@@ -1582,9 +1343,16 @@
       "route": "/ru/ads",
       "figma_node": "2129:54869",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "Ad on site"
+      "status": "ERRORED",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null,
+      "error": "File not found in codebase"
     },
     {
       "name": "send-message",
@@ -1592,9 +1360,15 @@
       "route": "/ru/feedback",
       "figma_node": "2129:54923",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "Send message"
+      "status": "NOT_RUN",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null
     },
     {
       "name": "faq",
@@ -1602,9 +1376,16 @@
       "route": "/ru/faq",
       "figma_node": "2129:54894",
       "auth_required": false,
-      "status": "needs-create",
-      "skip": false,
-      "frame_name": "FAQ"
+      "status": "ERRORED",
+      "started_at": null,
+      "completed_at": null,
+      "audit_file": null,
+      "fix_log": null,
+      "components_audited": null,
+      "problems_found": null,
+      "fixes_applied": null,
+      "fixes_deferred": null,
+      "error": "File not found in codebase"
     }
   ]
 }
